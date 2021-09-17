@@ -10,7 +10,7 @@ import AVFoundation
 
 var audioPlayer = AVAudioPlayer()
 
-private(set) var vc = TintPickerController()
+public var runningOn: String = ""
 
 public var selectedSpecialOp: String = ""
 
@@ -84,7 +84,9 @@ public var selectedFont: String {
 }
 
 func mediumHaptics() {
-    UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
+    
+//    UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+
 }
 
 func playSoundEffect(selectedSound: String) {
@@ -101,6 +103,57 @@ func playSoundEffect(selectedSound: String) {
     }
 }
 
+func StringFromUIColor(color: UIColor) -> String {
+    let components = color.cgColor.components
+    return "[\(components![0]), \(components![1]), \(components![2]), \(components![3])]"
+}
+    
+func UIColorFromString(string: String) -> UIColor {
+    let componentsString = string.replacingOccurrences(of: "[", with: "").replacingOccurrences(of: "]", with: "")
+    let components = componentsString.components(separatedBy: ", ")
+    return UIColor(red: CGFloat((components[0] as NSString).floatValue),
+                 green: CGFloat((components[1] as NSString).floatValue),
+                  blue: CGFloat((components[2] as NSString).floatValue),
+                 alpha: CGFloat((components[3] as NSString).floatValue))
+}
+
+extension Array where Element == Themes {
+    func save() {
+        if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: self, requiringSecureCoding: false) {
+            let defaults = UserDefaults.standard
+            defaults.set(savedData, forKey: "listofthemes")
+        }
+    }
+    
+    mutating func load() -> [Themes] {
+        if let savedThemes = UserDefaults.standard.object(forKey: "listofthemes") as? Data {
+            if let decodedThemes = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedThemes) as? [Themes] {
+                self = decodedThemes
+            }
+        }
+        return self
+    }
+}
+
+extension Themes {
+    func savecurrenttheme() {
+        if let savedCurrentThemeData = try? NSKeyedArchiver.archivedData(withRootObject: self, requiringSecureCoding: false) {
+            let defaults = UserDefaults.standard
+            defaults.set(savedCurrentThemeData, forKey: "currenttheme")
+        }
+    }
+    
+    func loadcurrenttheme() -> Themes {
+        if let savedCurrentTheme = UserDefaults.standard.object(forKey: "currenttheme") as? Data {
+            if let decodedCurrentTheme = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedCurrentTheme) as? Themes {
+                currenttheme = decodedCurrentTheme
+            }
+        }
+        return currenttheme
+    }
+}
+
+//converts UIColor to String
 extension Numeric {
     var data: Data {
         var bytes = self
@@ -154,41 +207,4 @@ extension UserDefaults {
         set { set(newValue, forKey: "backgroundColor") }
     }
 }
-
-extension Array where Element == Themes {
-    func save() {
-        if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: self, requiringSecureCoding: false) {
-            let defaults = UserDefaults.standard
-            defaults.set(savedData, forKey: "listofthemes")
-        }
-    }
-    
-    mutating func load() -> [Themes] {
-        if let savedThemes = UserDefaults.standard.object(forKey: "listofthemes") as? Data {
-            if let decodedThemes = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedThemes) as? [Themes] {
-                self = decodedThemes
-            }
-        }
-        return self
-    }
-}
-
-extension Themes {
-    func savecurrenttheme() {
-        if let savedCurrentThemeData = try? NSKeyedArchiver.archivedData(withRootObject: self, requiringSecureCoding: false) {
-            let defaults = UserDefaults.standard
-            defaults.set(savedCurrentThemeData, forKey: "currenttheme")
-        }
-    }
-    
-    func loadcurrenttheme() -> Themes {
-        if let savedCurrentTheme = UserDefaults.standard.object(forKey: "currenttheme") as? Data {
-            if let decodedCurrentTheme = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedCurrentTheme) as? Themes {
-                currenttheme = decodedCurrentTheme
-            }
-        }
-        return currenttheme
-    }
-}
-
 

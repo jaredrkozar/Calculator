@@ -96,6 +96,7 @@
                         </group>
                     </items>
                     <connections>
+                        <outlet property="clearButton" destination="CJ1-kt-Yho" id="eB7-0X-Fc1"/>
                         <outlet property="equation" destination="iTh-N2-qsw" id="R3j-D9-Ls1"/>
                     </connections>
                 </controller>

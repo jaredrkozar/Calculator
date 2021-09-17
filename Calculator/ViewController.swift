@@ -4,7 +4,7 @@
 //
 //  Created by Jared Kozar on 5/8/21.
 //
-
+ 
 import UIKit
 import AVFoundation
 
@@ -73,7 +73,7 @@ class ViewController: UIViewController {
         
         self.equation.text!.append(String(sender.tag-1))
         
-        mediumHaptics()
+//        mediumHaptics()
         backspaceButton.isEnabled = true
         backspaceButton.alpha = 1.0
     }

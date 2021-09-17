@@ -10,6 +10,7 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     @IBOutlet var equation: WKInterfaceLabel!
+    @IBOutlet var clearButton: WKInterfaceButton!
     var equationText: String = ""
     
     override func awake(withContext context: Any?) {
@@ -25,7 +26,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     @objc func MessageReceived() {
-        print("FFF")
+        clearButton.setBackgroundColor(UserDefaults.standard.color(forKey: "ScheduleDays")?.withAlphaComponent(0.7))
     }
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible

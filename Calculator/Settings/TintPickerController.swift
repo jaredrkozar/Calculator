@@ -54,14 +54,12 @@ class TintPickerController: UITableViewController, UIColorPickerViewControllerDe
         currenttheme.savecurrenttheme()
         view.tintColor = currenttheme.regularcolor
         navigationController?.navigationBar.tintColor = view.tintColor
-
-        
-        let message = ImmediateMessage(identifier: "message", content: ["hello": "world"])
+        let colorasstring = StringFromUIColor(color: currenttheme.regularcolor)
+        let message = ImmediateMessage(identifier: "message", content: ["regularColor": colorasstring])
         Communicator.shared.send(message) { error in
             print("Error sending immediate message", error)
         }
         
-    print(message)
         NotificationCenter.default.post(name: Notification.Name( "updateSettingsText"), object: nil)
         navigationController?.popViewController(animated: true)
 

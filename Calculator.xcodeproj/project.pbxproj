@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		7F2E799526E7CD2F00D49FB3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2E799426E7CD2F00D49FB3 /* SettingsViewController.swift */; };
 		7F2E799726E7FFCA00D49FB3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2E799626E7FFCA00D49FB3 /* Extensions.swift */; };
 		7F2E799926E81F6100D49FB3 /* NewYork.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F2E799826E81F6100D49FB3 /* NewYork.ttf */; };
+		7F4174EB26F45AB800249004 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2E799626E7FFCA00D49FB3 /* Extensions.swift */; };
+		7F4174EC26F45AE800249004 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10E42B26ED8E46005D069C /* Themes.swift */; };
+		7F4174ED26F45CD800249004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F68721C264701F80061A735 /* Assets.xcassets */; };
 		7F59B37226F301B100B6F905 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F59B37026F301B100B6F905 /* Interface.storyboard */; };
 		7F59B37426F301B200B6F905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F59B37326F301B200B6F905 /* Assets.xcassets */; };
 		7F59B37A26F301B200B6F905 /* Calculator (Watch( Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7F59B37926F301B200B6F905 /* Calculator (Watch( Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -206,7 +209,6 @@
 				12CF47FD174C9A3F34AC2249 /* Pods-Calculator (Watch( Extension.debug.xcconfig */,
 				350CD2501B2AB126C6C67C60 /* Pods-Calculator (Watch( Extension.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -217,9 +219,17 @@
 				7F2E799026E7C1BA00D49FB3 /* SettingsCell.swift */,
 				7F2E799126E7C1BA00D49FB3 /* SettingsCell.xib */,
 				7FCDE28A26EB18AC00D11BC1 /* operatorCellView.swift */,
-				7F10E42B26ED8E46005D069C /* Themes.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7F4174EA26F45A7D00249004 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7F2E799626E7FFCA00D49FB3 /* Extensions.swift */,
+				7F10E42B26ED8E46005D069C /* Themes.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		7F59B36F26F301B100B6F905 /* Calculator (Watch( */ = {
@@ -247,6 +257,7 @@
 		7F687204264701F60061A735 = {
 			isa = PBXGroup;
 			children = (
+				7F4174EA26F45A7D00249004 /* Shared */,
 				7F68720F264701F60061A735 /* Calculator */,
 				7F59B36F26F301B100B6F905 /* Calculator (Watch( */,
 				7F59B37D26F301B200B6F905 /* Calculator (Watch( Extension */,
@@ -304,7 +315,6 @@
 			isa = PBXGroup;
 			children = (
 				7F2E799426E7CD2F00D49FB3 /* SettingsViewController.swift */,
-				7F2E799626E7FFCA00D49FB3 /* Extensions.swift */,
 				7F687252264A32380061A735 /* TintPickerController.swift */,
 				7F68725C265971940061A735 /* ThemePickerController.swift */,
 				7F68725E265992E50061A735 /* AltIconPickerController.swift */,
@@ -454,6 +464,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F4174ED26F45CD800249004 /* Assets.xcassets in Resources */,
 				7F59B38726F301B300B6F905 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +607,8 @@
 				7F59B38526F301B200B6F905 /* ComplicationController.swift in Sources */,
 				7F59B38126F301B200B6F905 /* ExtensionDelegate.swift in Sources */,
 				7F59B37F26F301B200B6F905 /* InterfaceController.swift in Sources */,
+				7F4174EC26F45AE800249004 /* Themes.swift in Sources */,
+				7F4174EB26F45AB800249004 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //loads currently selected theme upon launching app
         currenttheme = currenttheme.loadcurrenttheme()
         
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            runningOn == "phone"
+        }
+        
         return true
     }
     
