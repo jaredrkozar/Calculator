@@ -8,7 +8,6 @@
 import WatchKit
 import Foundation
 
-
 class InterfaceController: WKInterfaceController {
     @IBOutlet var equation: WKInterfaceLabel!
     var equationText: String = ""
@@ -21,8 +20,13 @@ class InterfaceController: WKInterfaceController {
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(MessageReceived), name: NSNotification.Name("MessageReceived"), object: nil)
     }
     
+    @objc func MessageReceived() {
+        print("FFF")
+    }
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
     }

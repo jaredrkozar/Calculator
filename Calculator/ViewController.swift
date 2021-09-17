@@ -10,10 +10,8 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
-    
     @IBOutlet var numberButtons: [UIButton]!
 
-    
     @IBOutlet var operatorButtons: [UIButton]!
     
     let nc = NotificationCenter.default

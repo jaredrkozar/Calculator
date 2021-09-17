@@ -6,11 +6,15 @@
 //
 
 import WatchKit
+import Communicator
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        NSHomeDirectory()
+        setupObservations()
+        
     }
 
     func applicationDidBecomeActive() {
@@ -52,4 +56,17 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
         }
     }
 
+}
+
+private extension ExtensionDelegate {
+    
+    func setupObservations() {
+        
+        ImmediateMessage.observe { immediateMessage in
+                    print("Received immediate message: ", immediateMessage)
+                    let content = immediateMessage.content
+                   
+                    NotificationCenter.default.post(name: Notification.Name("MessageReceived"), object: nil)
+                }
+    }
 }

@@ -1,5 +1,6 @@
 import UIKit
 import Foundation
+import Communicator
 
 class TintPickerController: UITableViewController, UIColorPickerViewControllerDelegate {
 
@@ -13,7 +14,6 @@ class TintPickerController: UITableViewController, UIColorPickerViewControllerDe
         listofthemes = listofthemes.load()
 
         NotificationCenter.default.addObserver(self, selector: #selector(newThemeAdded(_:)), name: NSNotification.Name( "newThemeAdded"), object: nil)
-
         
     }
 
@@ -48,14 +48,21 @@ class TintPickerController: UITableViewController, UIColorPickerViewControllerDe
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        print("SS")
         //sets selectedColor to the label of the selected table cell, and calls the tintColor function in GlobalSettings. The navigation bar is updated with the UIColor that is returned.
         currenttheme = listofthemes[indexPath.row]
         currenttheme.savecurrenttheme()
         view.tintColor = currenttheme.regularcolor
         navigationController?.navigationBar.tintColor = view.tintColor
-        NotificationCenter.default.post(name: Notification.Name( "updateSettingsText"), object: nil)
+
         
+        let message = ImmediateMessage(identifier: "message", content: ["hello": "world"])
+        Communicator.shared.send(message) { error in
+            print("Error sending immediate message", error)
+        }
+        
+    print(message)
+        NotificationCenter.default.post(name: Notification.Name( "updateSettingsText"), object: nil)
         navigationController?.popViewController(animated: true)
 
         NotificationCenter.default.post(name: Notification.Name( "updateTint"), object: nil)

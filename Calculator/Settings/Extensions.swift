@@ -33,7 +33,7 @@ public var listofthemes: [Themes] = [
 ]
 
 //gets the current theme, if there's an error, load a special theme called "Error Theme
-public var currenttheme: Themes = Themes(name: "", regularcolor: UIColor(), operatorcolor: UIColor())
+public var currenttheme: Themes = Themes(name: "", regularcolor: UIColor.clear, operatorcolor: UIColor.clear)
 
 
 public var altIconName: String {
