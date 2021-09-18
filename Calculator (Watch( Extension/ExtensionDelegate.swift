@@ -63,14 +63,14 @@ private extension ExtensionDelegate {
     func setupObservations() {
         
         ImmediateMessage.observe { immediateMessage in
-                    print("Received immediate message: ", immediateMessage)
-                    let content = immediateMessage.content
+
+            let content = immediateMessage.content
                     
             let colorasstring = UIColorFromString(string: content["regularColor"] as! String)
             
-                    UserDefaults.standard.set(colorasstring, forKey: "ScheduleDays")
+            UserDefaults.standard.set(colorasstring, forKey: "regularColor")
             
-                    NotificationCenter.default.post(name: Notification.Name("MessageReceived"), object: nil)
-                }
+            NotificationCenter.default.post(name: Notification.Name("MessageReceived"), object: nil)
+        }
     }
 }

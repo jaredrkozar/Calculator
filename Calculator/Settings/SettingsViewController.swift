@@ -55,20 +55,20 @@ class SettingsViewController: UITableViewController {
         models.append(Sections(title: "Appearance", settings: [
             SettingsOptions(title: "Tint Color", option: "\(currenttheme.name)", icon: UIImage(systemName: "eyedropper.halffull"), iconBGColor: UIColor(named: "Blue")!) {
                
-                let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "tintView") as! TintPickerController
-                self.show(VC1, sender: true)
+                let tintSettings = self.storyboard!.instantiateViewController(withIdentifier: "tintView") as! TintPickerController
+                self.show(tintSettings, sender: true)
             },
             
             SettingsOptions(title: "Theme", option: "\(themeName)", icon: UIImage(systemName: "paintbrush"), iconBGColor: UIColor(named: "Red")!) {
-                let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "themeView") as! ThemePickerController
-                self.show(VC1, sender: true)
+                let themeSettings = self.storyboard!.instantiateViewController(withIdentifier: "themeView") as! ThemePickerController
+                self.show(themeSettings, sender: true)
                 
             },
             
             SettingsOptions(title: "App Icon", option: "\(altIconName)", icon: UIImage(systemName: "square.grid.2x2"), iconBGColor: UIColor(named: "Orange")!) {
                
-                let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "appIconView") as! AltIconPickerController
-                self.show(VC1, sender: true)
+                let appIconSettings = self.storyboard!.instantiateViewController(withIdentifier: "appIconView") as! AltIconPickerController
+                self.show(appIconSettings, sender: true)
                 
             },
         ]))
@@ -78,23 +78,31 @@ class SettingsViewController: UITableViewController {
             
             SettingsOptions(title: "Rounding", option: "\(roundingPlaces) decimal places", icon: UIImage(systemName: "textformat.123"), iconBGColor: UIColor(named: "Yellow")!) {
                 
-                let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "roundingView") as! RoundingPickerController
-                self.show(VC1, sender: true)
+                let roundingSettings = self.storyboard!.instantiateViewController(withIdentifier: "roundingView") as! RoundingPickerController
+                self.show(roundingSettings, sender: true)
             },
             
             SettingsOptions(title: "Key Click Sound", option: "\(selectedSound)", icon: UIImage(systemName: "speaker.wave.2"), iconBGColor: UIColor(named: "Blue")!) {
               
-                let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "keyClickView") as! KeyClickSoundController
-                self.show(VC1, sender: true)
+                let keyClickSettings = self.storyboard!.instantiateViewController(withIdentifier: "keyClickView") as! KeyClickSoundController
+                self.show(keyClickSettings, sender: true)
                 
             },
             
             SettingsOptions(title: "Fonts", option: "\(selectedFont)", icon: UIImage(systemName: "textformat"), iconBGColor: UIColor(named: "Gray")!) {
                 
-                let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "fontVIew") as! FontPickerController
-                self.show(VC1, sender: true)
+                let fontSettings = self.storyboard!.instantiateViewController(withIdentifier: "fontView") as! FontPickerController
+                self.show(fontSettings, sender: true)
                 
             },
+            
+            SettingsOptions(title: "Apple Watch", option: "", icon: UIImage(systemName: "applewatch"), iconBGColor: UIColor(named: "Black")!) {
+                
+                let watchSettings = self.storyboard!.instantiateViewController(withIdentifier: "watchSettingsVIew") as! WatchSettingsViewController
+                self.show(watchSettings, sender: true)
+                
+            },
+            
         ]))
     }
     

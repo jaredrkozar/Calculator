@@ -26,7 +26,10 @@ class InterfaceController: WKInterfaceController {
     }
     
     @objc func MessageReceived() {
-        clearButton.setBackgroundColor(UserDefaults.standard.color(forKey: "ScheduleDays")?.withAlphaComponent(0.7))
+       
+        clearButton.setBackgroundColor(UserDefaults.standard.color(forKey: "regularColor")?.withAlphaComponent(0.7))
+
+        
     }
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible

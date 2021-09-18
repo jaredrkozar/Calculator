@@ -5,6 +5,7 @@ import Communicator
 class TintPickerController: UITableViewController, UIColorPickerViewControllerDelegate {
 
     let nc = NotificationCenter.default
+    var checkmark: Int = 0
     
     override func viewDidLoad() {
         //sets the correct tint color when the view is loaded
@@ -37,28 +38,38 @@ class TintPickerController: UITableViewController, UIColorPickerViewControllerDe
         cell.textLabel?.text = listofthemes[indexPath.row].name
         
         let tintIndex = listofthemes.firstIndex(of: currenttheme)
-        
+
         if indexPath.row == tintIndex {
-            cell.accessoryType = .checkmark
+          cell.accessoryType = .checkmark
         } else {
-            cell.accessoryType = .none
+          cell.accessoryType = .none
         }
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("SS")
+
+        var colorasstring: String = ""
+        
         //sets selectedColor to the label of the selected table cell, and calls the tintColor function in GlobalSettings. The navigation bar is updated with the UIColor that is returned.
         currenttheme = listofthemes[indexPath.row]
         currenttheme.savecurrenttheme()
         view.tintColor = currenttheme.regularcolor
         navigationController?.navigationBar.tintColor = view.tintColor
-        let colorasstring = StringFromUIColor(color: currenttheme.regularcolor)
+        
+        if matchPhoneTint == true {
+            colorasstring = StringFromUIColor(color: currenttheme.regularcolor)
+        } else {
+            colorasstring = StringFromUIColor(color: UIColor(named: "darkGray")!)
+        }
+       
         let message = ImmediateMessage(identifier: "message", content: ["regularColor": colorasstring])
+        
         Communicator.shared.send(message) { error in
             print("Error sending immediate message", error)
         }
+    
         
         NotificationCenter.default.post(name: Notification.Name( "updateSettingsText"), object: nil)
         navigationController?.popViewController(animated: true)
@@ -78,7 +89,7 @@ class TintPickerController: UITableViewController, UIColorPickerViewControllerDe
                 isCurrentlyEditingTheme = true
                 let newtheme = storyboard!.instantiateViewController(withIdentifier: "newThemeView") as! NewThemeController
                 
-                newtheme.themeName = selectedtheme.name
+                newtheme.newthemeName = selectedtheme.name
                 NewThemeController.themeRegularColor = selectedtheme.regularcolor
                 NewThemeController.themeOperatorColor = selectedtheme.operatorcolor
                 self.show(newtheme, sender: true)

@@ -52,6 +52,7 @@
 		7FC12311267287E000D3599E /* blackandwhiteicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FC1230C267287DF00D3599E /* blackandwhiteicon.png */; };
 		7FC12312267287E000D3599E /* grayicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FC1230D267287DF00D3599E /* grayicon.png */; };
 		7FC12313267287E000D3599E /* greenicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FC1230E267287E000D3599E /* greenicon.png */; };
+		7FC7FA7526F545AF00CFAB2C /* WatchSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC7FA7426F545AF00CFAB2C /* WatchSettingsViewController.swift */; };
 		7FCDE28726EB160A00D11BC1 /* MoreOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCDE28626EB160A00D11BC1 /* MoreOperatorsViewController.swift */; };
 		7FCDE28C26EB18AC00D11BC1 /* operatorCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCDE28A26EB18AC00D11BC1 /* operatorCellView.swift */; };
 		7FCDE28D26EB18AC00D11BC1 /* operatorCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FCDE28B26EB18AC00D11BC1 /* operatorCellView.xib */; };
@@ -152,6 +153,7 @@
 		7FC1230C267287DF00D3599E /* blackandwhiteicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackandwhiteicon.png; sourceTree = "<group>"; };
 		7FC1230D267287DF00D3599E /* grayicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayicon.png; sourceTree = "<group>"; };
 		7FC1230E267287E000D3599E /* greenicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenicon.png; sourceTree = "<group>"; };
+		7FC7FA7426F545AF00CFAB2C /* WatchSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSettingsViewController.swift; sourceTree = "<group>"; };
 		7FCDE28626EB160A00D11BC1 /* MoreOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreOperatorsViewController.swift; sourceTree = "<group>"; };
 		7FCDE28A26EB18AC00D11BC1 /* operatorCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = operatorCellView.swift; sourceTree = "<group>"; };
 		7FCDE28B26EB18AC00D11BC1 /* operatorCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = operatorCellView.xib; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				7F2E799426E7CD2F00D49FB3 /* SettingsViewController.swift */,
+				7FC7FA7426F545AF00CFAB2C /* WatchSettingsViewController.swift */,
 				7F687252264A32380061A735 /* TintPickerController.swift */,
 				7F68725C265971940061A735 /* ThemePickerController.swift */,
 				7F68725E265992E50061A735 /* AltIconPickerController.swift */,
@@ -632,6 +635,7 @@
 				7F68725D265971940061A735 /* ThemePickerController.swift in Sources */,
 				7F2E799726E7FFCA00D49FB3 /* Extensions.swift in Sources */,
 				7FB46AFA267487ED005525AF /* FontPickerController.swift in Sources */,
+				7FC7FA7526F545AF00CFAB2C /* WatchSettingsViewController.swift in Sources */,
 				7F687213264701F60061A735 /* SceneDelegate.swift in Sources */,
 				7FB46AF826748318005525AF /* HistoryClassController.swift in Sources */,
 			);

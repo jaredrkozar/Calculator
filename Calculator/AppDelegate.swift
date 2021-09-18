@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         currenttheme = currenttheme.loadcurrenttheme()
         
         if UIDevice.current.userInterfaceIdiom == .phone {
-            runningOn == "phone"
+            runningOn = "phone"
         }
         
         return true

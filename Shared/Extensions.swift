@@ -14,6 +14,16 @@ public var runningOn: String = ""
 
 public var selectedSpecialOp: String = ""
 
+public var matchPhoneTint: Bool {
+    //match the iPhone's tint color
+    get{
+        return UserDefaults.standard.bool(forKey: "matchTint")
+    }
+    set{
+        UserDefaults.standard.set(newValue, forKey: "matchTint")
+    }
+}
+
 public var historyNums: [String] {
     //saves the color, for use throughout the app
     get{
@@ -33,7 +43,7 @@ public var listofthemes: [Themes] = [
 ]
 
 //gets the current theme, if there's an error, load a special theme called "Error Theme
-public var currenttheme: Themes = Themes(name: "", regularcolor: UIColor.clear, operatorcolor: UIColor.clear)
+public var currenttheme: Themes = listofthemes[0]
 
 
 public var altIconName: String {
@@ -105,7 +115,10 @@ func playSoundEffect(selectedSound: String) {
 
 func StringFromUIColor(color: UIColor) -> String {
     let components = color.cgColor.components
+
     return "[\(components![0]), \(components![1]), \(components![2]), \(components![3])]"
+    
+    
 }
     
 func UIColorFromString(string: String) -> UIColor {

@@ -10,13 +10,12 @@ import UIKit
 class NewThemeController: UIViewController {
     let saveButton = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveTheme))
     
-    var themeName: String = ""
+    var newthemeName: String = ""
     static var themeRegularColor: UIColor!
     static var themeOperatorColor: UIColor!
     
     @IBOutlet var nameTextField: UITextField!
     
-    //bug nappens because
     let regularColorWell: UIColorWell = {
         let colorwell = UIColorWell()
         colorwell.supportsAlpha = false
@@ -57,7 +56,7 @@ class NewThemeController: UIViewController {
         view.addSubview(operatorColorWell)
         
         constraints()
-        nameTextField!.text = themeName ?? ""
+        nameTextField!.text = newthemeName ?? ""
         
         navigationItem.rightBarButtonItem = saveButton
     }
@@ -85,6 +84,7 @@ class NewThemeController: UIViewController {
     }
     
     @objc func saveTheme() {
+        print(UserDefaults.standard.integer(forKey: "row"))
         if isCurrentlyEditingTheme == true {
             listofthemes[UserDefaults.standard.integer(forKey: "row")] = Themes(name: nameTextField!.text!, regularcolor: regularColorWell.selectedColor!, operatorcolor: operatorColorWell.selectedColor!)
         } else {

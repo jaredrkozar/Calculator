@@ -443,7 +443,7 @@
         <!--Fonts-->
         <scene sceneID="IWV-Vy-hOP">
             <objects>
-                <tableViewController storyboardIdentifier="fontVIew" id="317-pS-0jL" customClass="FontPickerController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="fontView" id="317-pS-0jL" customClass="FontPickerController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="46" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="cfC-Rn-SU1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -763,6 +763,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhm-ng-vyq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5865.217391304348" y="773.4375"/>
+        </scene>
+        <!--Watch Settings View Controller-->
+        <scene sceneID="j87-w1-Zvd">
+            <objects>
+                <tableViewController storyboardIdentifier="watchSettingsVIew" id="aPb-2N-yBj" customClass="WatchSettingsViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="pnJ-tM-56b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="cgK-Fb-zOV">
+                                <string key="footerTitle">If this setting is on, the Watch app will match the iPhone app's tint color. If it is off, the Watch app will use the standard gray button color.</string>
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VJv-7g-d19">
+                                        <rect key="frame" x="20" y="18" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VJv-7g-d19" id="9Lk-e6-u7D">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="57G-5j-Djx">
+                                                    <rect key="frame" x="312" y="6" width="49" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Match iPhone Tint Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQ1-TY-Qmj">
+                                                    <rect key="frame" x="12" y="11" width="183" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="57G-5j-Djx" firstAttribute="top" secondItem="9Lk-e6-u7D" secondAttribute="top" constant="6" id="fjn-h9-5N4"/>
+                                                <constraint firstAttribute="trailing" secondItem="57G-5j-Djx" secondAttribute="trailing" constant="15" id="xEv-Uu-Q1i"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="aPb-2N-yBj" id="GaF-Eg-mLt"/>
+                            <outlet property="delegate" destination="aPb-2N-yBj" id="d9f-7M-hh7"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="matchPhoneTintSwitch" destination="57G-5j-Djx" id="aI6-RK-rWS"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v2m-l8-gaJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6880" y="807"/>
         </scene>
         <!--Tint Color-->
         <scene sceneID="g1M-z3-9N9">
