@@ -7,6 +7,7 @@
  
 import UIKit
 import AVFoundation
+import SwiftyMath
 
 class ViewController: UIViewController {
 
@@ -81,7 +82,7 @@ class ViewController: UIViewController {
     @IBAction func decimalInsert(_ sender: UIButton) {
         //If anser.text is blank, and the user taps the decimal button, a decimal is inserted. Otherwise, the decimal is inserted after the current number.
         checkAnswer()
-
+        
         self.equation.text!.append(".")
     }
     
@@ -113,7 +114,8 @@ class ViewController: UIViewController {
 
     @IBAction func equalsButtonTapped(_ sender: Any) {
         //parse equation using SwiftyMath
-
+        equation.text?.append(contentsOf: " = \(Parser.parseEquation(equation: equation.text!))")
+        historyNums.append(equation.text!)
     }
 
     

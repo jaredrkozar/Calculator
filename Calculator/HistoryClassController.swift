@@ -13,7 +13,7 @@ class HistoryClassController: UITableViewController {
         view.tintColor = currenttheme.regularcolor
 
         navigationController?.navigationBar.tintColor = view.tintColor
-        
+      
         checkHistory()
     }
 

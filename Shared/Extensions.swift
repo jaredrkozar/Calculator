@@ -25,7 +25,7 @@ public var matchPhoneTint: Bool {
 }
 
 public var historyNums: [String] {
-    //saves the color, for use throughout the app
+    //saves the history nums array, for use in the HistoryClassController()
     get{
         return UserDefaults.standard.stringArray(forKey: "historyNums") ?? [String]()
     }
