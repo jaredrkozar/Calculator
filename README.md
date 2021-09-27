@@ -1,7 +1,7 @@
 # Calculator
 A small calculator app, made with Swift
 
-This app uses my custom math parser, [SwiftyMath](https://github.com/jaredrkozar/SwiftyMath). 
+This app uses my custom math parser, [SwiftyMathParser](https://github.com/jaredrkozar/SwiftyMathParser). 
 
 **FEATURES**
 
