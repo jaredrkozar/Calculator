@@ -1,10 +1,11 @@
 # Calculator
 A small calculator app, made with Swift
 
-<img src = "Images/calculator-dark.png" width="300" height="700">
-<img src = "Images/settings-light.png" width="300" height="700">
+This app uses my custom math parser, [SwiftyMath](https://github.com/jaredrkozar/SwiftyMath). 
 
 **FEATURES**
+
+- Includes an Apple Watch app! Perform calculations, right from your wrist.
 
 - can set tint color, font, and app icon to suit your preferences
 
