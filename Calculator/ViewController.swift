@@ -7,7 +7,7 @@
  
 import UIKit
 import AVFoundation
-import SwiftyMath
+import SwiftyMathParser
 
 class ViewController: UIViewController {
 
@@ -114,7 +114,7 @@ class ViewController: UIViewController {
 
     @IBAction func equalsButtonTapped(_ sender: Any) {
         //parse equation using SwiftyMath
-        equation.text?.append(contentsOf: " = \(Parser.parseEquation(equation: equation.text!))")
+        equation.text?.append(contentsOf: " = \(Parser.parseEquation(equation: equation.text!).round(places: roundingPlaces))")
         historyNums.append(equation.text!)
     }
 
