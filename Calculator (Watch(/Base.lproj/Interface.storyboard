@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19150" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38"/>
+    <device id="watch44"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19134"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19036"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -13,17 +14,27 @@
                     <items>
                         <group width="1" height="0.20000000000000001" alignment="left" id="QWC-1w-PIP">
                             <items>
-                                <button width="0.29999999999999999" height="1" alignment="left" title="C" id="CJ1-kt-Yho">
-                                    <connections>
-                                        <action selector="clearButtonTapped" destination="AgC-eL-Hgc" id="TKn-a9-o3R"/>
-                                    </connections>
-                                </button>
-                                <label width="88" height="28" alignment="left" text="Label" textAlignment="right" id="iTh-N2-qsw">
+                                <label width="1" height="1" alignment="right" text="Label" textAlignment="right" id="iTh-N2-qsw">
                                     <fontDescription key="font" style="UICTFontTextStyleBody"/>
                                 </label>
                             </items>
                         </group>
-                        <group width="1" height="0.20000000000000001" alignment="left" id="Vyz-84-fQC">
+                        <group width="1" height="0.14999999999999999" alignment="left" id="Vyz-84-fQC">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="C" id="CJ1-kt-Yho">
+                                    <connections>
+                                        <action selector="clearButtonTapped" destination="AgC-eL-Hgc" id="TKn-a9-o3R"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="Button" id="TcW-pq-4w2"/>
+                                <button width="0.25" height="1" alignment="right" title="/" id="z3R-ki-oF2">
+                                    <connections>
+                                        <action selector="divideTapped" destination="AgC-eL-Hgc" id="OBt-wu-32C"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.14999999999999999" alignment="left" id="loG-Ea-Wyg">
                             <items>
                                 <button width="0.25" height="1" alignment="left" title="7" id="bhr-kT-Pf0">
                                     <connections>
@@ -40,10 +51,14 @@
                                         <action selector="nineTapped" destination="AgC-eL-Hgc" id="KTJ-ps-9e2"/>
                                     </connections>
                                 </button>
-                                <button width="0.25" height="1" alignment="left" title="/" id="z3R-ki-oF2"/>
+                                <button width="0.25" height="1" alignment="left" title="x" id="mN5-m7-bad">
+                                    <connections>
+                                        <action selector="multiplyTapped" destination="AgC-eL-Hgc" id="2TP-Z4-qt0"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
-                        <group width="1" height="0.20000000000000001" alignment="left" id="loG-Ea-Wyg">
+                        <group width="1" height="0.14999999999999999" alignment="left" id="zWO-uB-wYx">
                             <items>
                                 <button width="0.25" height="1" alignment="left" title="4" id="x0W-3Z-ZBw">
                                     <connections>
@@ -60,10 +75,14 @@
                                         <action selector="sixTapped" destination="AgC-eL-Hgc" id="tgK-ur-6iw"/>
                                     </connections>
                                 </button>
-                                <button width="0.25" height="1" alignment="left" title="x" id="mN5-m7-bad"/>
+                                <button width="0.25" height="1" alignment="left" title="-" id="YZr-rz-18P">
+                                    <connections>
+                                        <action selector="subtractTapped" destination="AgC-eL-Hgc" id="UIV-St-jZd"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
-                        <group width="1" height="0.20000000000000001" alignment="left" id="zWO-uB-wYx">
+                        <group width="1" height="0.14999999999999999" alignment="left" id="V0D-PH-CXc">
                             <items>
                                 <button width="0.25" height="1" alignment="left" title="1" id="54B-fo-NaL">
                                     <connections>
@@ -80,18 +99,26 @@
                                         <action selector="threeTapped" destination="AgC-eL-Hgc" id="ddq-8c-Uxm"/>
                                     </connections>
                                 </button>
-                                <button width="0.25" height="1" alignment="left" title="-" id="YZr-rz-18P"/>
-                            </items>
-                        </group>
-                        <group width="1" height="0.20000000000000001" alignment="left" id="V0D-PH-CXc">
-                            <items>
-                                <button width="0.5" height="1" alignment="left" title="0" id="gj1-vJ-XrT">
+                                <button width="0.25" height="1" alignment="left" title="+" id="IP3-iS-F8Q">
                                     <connections>
-                                        <action selector="zeroTapped" destination="AgC-eL-Hgc" id="ol6-Lu-oaD"/>
+                                        <action selector="addTapped" destination="AgC-eL-Hgc" id="6OL-aT-2sQ"/>
                                     </connections>
                                 </button>
-                                <button width="0.25" height="1" alignment="left" title="/" id="TXl-jo-ZdN"/>
-                                <button width="0.25" height="1" alignment="left" title="+" id="IP3-iS-F8Q"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.14999999999999999" alignment="left" id="fwI-5K-7Ra">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="0" id="8m5-b7-8JE">
+                                    <connections>
+                                        <action selector="zeroTapped" destination="AgC-eL-Hgc" id="XnN-5A-fTn"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="." id="zB6-kv-4dL"/>
+                                <button width="0.25" height="1" alignment="left" title="=" id="Bs2-gG-ZUF">
+                                    <connections>
+                                        <action selector="equalsButtonTapped" destination="AgC-eL-Hgc" id="q3F-a5-Ytp"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                     </items>
@@ -101,7 +128,28 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="218.78260869565216" y="355.9375"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="21n-Ri-N2p">
+            <objects>
+                <controller id="WhI-qC-TOi">
+                    <items>
+                        <table alignment="left" id="jLH-tb-ane">
+                            <items>
+                                <tableRow id="fdH-hY-JM2">
+                                    <group key="rootItem" width="1" alignment="left" layout="vertical" id="ENg-IY-nAc"/>
+                                </tableRow>
+                            </items>
+                            <imageReference key="backgroundImage" image="blueicon"/>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="142" y="560"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="blueicon" width="180" height="180"/>
+    </resources>
 </document>

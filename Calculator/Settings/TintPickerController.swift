@@ -36,7 +36,7 @@ class TintPickerController: UITableViewController, UIColorPickerViewControllerDe
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "tintColorCell", for: indexPath)
         cell.textLabel?.text = listofthemes[indexPath.row].name
-        
+ 
         let tintIndex = listofthemes.firstIndex(of: currenttheme)
 
         if indexPath.row == tintIndex {

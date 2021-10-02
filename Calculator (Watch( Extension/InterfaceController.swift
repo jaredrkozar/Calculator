@@ -7,6 +7,7 @@
 
 import WatchKit
 import Foundation
+import SwiftyMathParser
 
 class InterfaceController: WKInterfaceController {
     @IBOutlet var equation: WKInterfaceLabel!
@@ -35,6 +36,7 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
     }
     
+    //append numbers
     @IBAction func zeroTapped() {
         numberTapped(number: "0")
     }
@@ -75,6 +77,22 @@ class InterfaceController: WKInterfaceController {
         numberTapped(number: "9")
     }
     
+    @IBAction func divideTapped() {
+        numberTapped(number: "/")
+    }
+    
+    @IBAction func multiplyTapped() {
+        numberTapped(number: "*")
+    }
+    
+    @IBAction func subtractTapped() {
+        numberTapped(number: "-")
+    }
+    
+    @IBAction func addTapped() {
+        numberTapped(number: "+")
+    }
+    
     @IBAction func clearButtonTapped() {
         equationText = "Enter a number"
         equation.setText(equationText)
@@ -89,5 +107,10 @@ class InterfaceController: WKInterfaceController {
         equationText.append("\(number)")
         
        equation.setText(equationText)
+    }
+    
+    @IBAction func equalsButtonTapped() {
+        
+        equation.setText("\(equationText) = \(Parser.parseEquation(equation: equationText))")
     }
 }
