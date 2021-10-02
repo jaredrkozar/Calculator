@@ -77,6 +77,12 @@ class InterfaceController: WKInterfaceController {
         numberTapped(number: "9")
     }
     
+    //append operators
+    
+    
+    @IBAction func appendDecimal() {
+        numberTapped(number: ".")
+    }
     @IBAction func divideTapped() {
         numberTapped(number: "/")
     }

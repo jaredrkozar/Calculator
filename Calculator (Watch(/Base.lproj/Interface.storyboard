@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19150" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38"/>
+    <device id="watch44"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19134"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19036"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -15,7 +14,7 @@
                         <group width="1" height="0.20000000000000001" alignment="left" id="QWC-1w-PIP">
                             <items>
                                 <label width="1" height="1" alignment="right" text="Label" textAlignment="right" id="iTh-N2-qsw">
-                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
                                 </label>
                             </items>
                         </group>
@@ -112,7 +111,11 @@
                                         <action selector="zeroTapped" destination="AgC-eL-Hgc" id="XnN-5A-fTn"/>
                                     </connections>
                                 </button>
-                                <button width="0.25" height="1" alignment="left" title="." id="zB6-kv-4dL"/>
+                                <button width="0.25" height="1" alignment="left" title="." id="zB6-kv-4dL">
+                                    <connections>
+                                        <action selector="appendDecimal" destination="AgC-eL-Hgc" id="tZJ-aJ-thv"/>
+                                    </connections>
+                                </button>
                                 <button width="0.25" height="1" alignment="left" title="=" id="Bs2-gG-ZUF">
                                     <connections>
                                         <action selector="equalsButtonTapped" destination="AgC-eL-Hgc" id="q3F-a5-Ytp"/>
@@ -129,26 +132,5 @@
             </objects>
             <point key="canvasLocation" x="218" y="355.5"/>
         </scene>
-        <!--Interface Controller-->
-        <scene sceneID="21n-Ri-N2p">
-            <objects>
-                <controller id="WhI-qC-TOi">
-                    <items>
-                        <table alignment="left" id="jLH-tb-ane">
-                            <items>
-                                <tableRow id="fdH-hY-JM2">
-                                    <group key="rootItem" width="1" alignment="left" layout="vertical" id="ENg-IY-nAc"/>
-                                </tableRow>
-                            </items>
-                            <imageReference key="backgroundImage" image="blueicon"/>
-                        </table>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="142" y="560"/>
-        </scene>
     </scenes>
-    <resources>
-        <image name="blueicon" width="180" height="180"/>
-    </resources>
 </document>
