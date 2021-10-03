@@ -65,10 +65,16 @@ private extension ExtensionDelegate {
         ImmediateMessage.observe { immediateMessage in
 
             let content = immediateMessage.content
-                    
-            let colorasstring = UIColorFromString(string: content["regularColor"] as! String)
+                  
+            if content["regularColor"] != nil {
+                let colorasstring = UIColorFromString(string: content["regularColor"] as! String)
+                
+                
+                UserDefaults.standard.set(colorasstring, forKey: "regularColor")
+            }
+            let matchtint = content["matchPhoneTintStatus"]
             
-            UserDefaults.standard.set(colorasstring, forKey: "regularColor")
+            UserDefaults.standard.set(matchtint, forKey: "matchPhoneTint")
             
             NotificationCenter.default.post(name: Notification.Name("MessageReceived"), object: nil)
         }

@@ -27,9 +27,11 @@ class InterfaceController: WKInterfaceController {
     }
     
     @objc func MessageReceived() {
-       
-        clearButton.setBackgroundColor(UserDefaults.standard.color(forKey: "regularColor")?.withAlphaComponent(0.7))
-
+        if UserDefaults.standard.integer(forKey: "matchPhoneTint") == 1 {
+            clearButton.setBackgroundColor(UserDefaults.standard.color(forKey: "regularColor")?.withAlphaComponent(0.7))
+        } else {
+            clearButton.setBackgroundColor(UIColor.darkGray.withAlphaComponent(1.0))
+        }
         
     }
     override func didDeactivate() {

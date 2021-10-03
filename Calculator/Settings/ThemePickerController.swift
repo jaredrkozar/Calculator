@@ -31,7 +31,7 @@ class ThemePickerController: UITableViewController {
         cell.textLabel?.text = themes[indexPath.row]
         
         let indexTheme = themes.firstIndex(of: "\(themeName)")
-        print(themeName)
+   
         if indexPath.row == indexTheme {
             cell.accessoryType = .checkmark
         } else {

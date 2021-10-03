@@ -50,7 +50,7 @@ class TintPickerController: UITableViewController, UIColorPickerViewControllerDe
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        var colorasstring: String = ""
+     
         
         //sets selectedColor to the label of the selected table cell, and calls the tintColor function in GlobalSettings. The navigation bar is updated with the UIColor that is returned.
         currenttheme = listofthemes[indexPath.row]
@@ -59,16 +59,15 @@ class TintPickerController: UITableViewController, UIColorPickerViewControllerDe
         navigationController?.navigationBar.tintColor = view.tintColor
         
         if matchPhoneTint == true {
-            colorasstring = StringFromUIColor(color: currenttheme.regularcolor)
-        } else {
-            colorasstring = StringFromUIColor(color: UIColor(named: "darkGray")!)
+            let colorasstring = StringFromUIColor(color: currenttheme.regularcolor)
+            
+             let message = ImmediateMessage(identifier: "message", content: ["regularColor": colorasstring])
+             
+             Communicator.shared.send(message) { error in
+                 print("Error sending immediate message", error)
+             }
         }
        
-        let message = ImmediateMessage(identifier: "message", content: ["regularColor": colorasstring])
-        
-        Communicator.shared.send(message) { error in
-            print("Error sending immediate message", error)
-        }
     
         
         NotificationCenter.default.post(name: Notification.Name( "updateSettingsText"), object: nil)

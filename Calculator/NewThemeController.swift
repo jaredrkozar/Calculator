@@ -84,7 +84,6 @@ class NewThemeController: UIViewController {
     }
     
     @objc func saveTheme() {
-        print(UserDefaults.standard.integer(forKey: "row"))
         if isCurrentlyEditingTheme == true {
             listofthemes[UserDefaults.standard.integer(forKey: "row")] = Themes(name: nameTextField!.text!, regularcolor: regularColorWell.selectedColor!, operatorcolor: operatorColorWell.selectedColor!)
         } else {
