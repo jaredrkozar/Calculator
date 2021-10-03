@@ -27,10 +27,10 @@ class InterfaceController: WKInterfaceController {
     }
     
     @objc func MessageReceived() {
-        if UserDefaults.standard.integer(forKey: "matchPhoneTint") == 1 {
+        if UserDefaults.standard.bool(forKey: "matchPhoneTint") == true {
             clearButton.setBackgroundColor(UserDefaults.standard.color(forKey: "regularColor")?.withAlphaComponent(0.7))
         } else {
-            clearButton.setBackgroundColor(UIColor.darkGray.withAlphaComponent(1.0))
+            clearButton.setBackgroundColor(UIColor.darkGray.withAlphaComponent(0.5))
         }
         
     }
