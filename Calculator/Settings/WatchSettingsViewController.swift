@@ -28,6 +28,12 @@ class WatchSettingsViewController: UITableViewController {
             matchPhoneTint = false
         }
         
+        let message = ImmediateMessage(identifier: "message", content: ["matchPhoneTintStatus": matchPhoneTint])
+        
+        Communicator.shared.send(message) { error in
+            print("Error sending immediate message", error)
+        }
+        
     }
     
 }

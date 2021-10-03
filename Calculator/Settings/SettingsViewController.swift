@@ -96,7 +96,7 @@ class SettingsViewController: UITableViewController {
                 
             },
             
-            SettingsOptions(title: "Apple Watch", option: "", icon: UIImage(systemName: "applewatch"), iconBGColor: UIColor(named: "Black")!) {
+            SettingsOptions(title: "Apple Watch", option: "", icon: UIImage(systemName: "applewatch"), iconBGColor: UIColor.black) {
                 
                 let watchSettings = self.storyboard!.instantiateViewController(withIdentifier: "watchSettingsVIew") as! WatchSettingsViewController
                 self.show(watchSettings, sender: true)
