@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Communicator
 
 class RoundingPickerController: UITableViewController {
 
@@ -33,6 +34,17 @@ class RoundingPickerController: UITableViewController {
         
         NotificationCenter.default.post(name: Notification.Name( "updateSettingsText"), object: nil)
         UserDefaults.standard.set(roundSlider.value, forKey: "roundSlider")
+        
+        
+        if matchPhoneRoundingValue == true {
+            
+             let message = ImmediateMessage(identifier: "message", content: ["roundingPlaces": roundingPlaces])
+             
+             Communicator.shared.send(message) { error in
+                 print("Error sending immediate message", error)
+             }
+        }
+       
         
     }
     

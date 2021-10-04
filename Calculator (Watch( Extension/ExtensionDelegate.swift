@@ -13,7 +13,8 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
         NSHomeDirectory()
-        setupObservations()
+        colorObservations()
+        roundingObservations()
         
     }
 
@@ -60,7 +61,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
 private extension ExtensionDelegate {
     
-    func setupObservations() {
+    func colorObservations() {
         
         ImmediateMessage.observe { immediateMessage in
 
@@ -80,6 +81,21 @@ private extension ExtensionDelegate {
             UserDefaults.standard.set(matchtint, forKey: "matchPhoneTint")
             
             NotificationCenter.default.post(name: Notification.Name("MessageReceived"), object: nil)
+        }
+    }
+    
+    func roundingObservations() {
+        
+        ImmediateMessage.observe { immediateMessage in
+
+            let content = immediateMessage.content
+                  
+            if content["roundingPlaces"] != nil {
+                UserDefaults.standard.set(content["roundingPlaces"], forKey: "roundingPlaces")
+            
+            }
+            
+            NotificationCenter.default.post(name: Notification.Name("RoundingMessageReceived"), object: nil)
         }
     }
 }

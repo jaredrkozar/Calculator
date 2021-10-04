@@ -12,12 +12,18 @@ class WatchSettingsViewController: UITableViewController {
 
     @IBOutlet var matchPhoneTintSwitch: UISwitch!
     
+    @IBOutlet var matchPhoneRoundingValueSwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        matchPhoneTintSwitch.onTintColor = currenttheme.regularcolor
+        view.tintColor = currenttheme.regularcolor
+        
         matchPhoneTintSwitch.isOn = matchPhoneTint
         matchPhoneTintSwitch.addTarget(self, action: #selector(toggleTintSwitch), for: .valueChanged)
+        
+        matchPhoneRoundingValueSwitch.isOn = matchPhoneRoundingValue
+        matchPhoneRoundingValueSwitch.addTarget(self, action: #selector(toggleRoundingValueSwitch), for: .valueChanged)
        
     }
     
@@ -35,5 +41,21 @@ class WatchSettingsViewController: UITableViewController {
         }
         
     }
+    
+    @objc func toggleRoundingValueSwitch() {
+        if matchPhoneRoundingValueSwitch.isOn == true {
+            matchPhoneRoundingValue = true
+        } else {
+            matchPhoneRoundingValue = false
+        }
+        
+        let message = ImmediateMessage(identifier: "message", content: ["matchPhoneRoundingValue": matchPhoneRoundingValueSwitch])
+        
+        Communicator.shared.send(message) { error in
+            print("Error sending immediate message", error)
+        }
+        
+    }
+    
     
 }

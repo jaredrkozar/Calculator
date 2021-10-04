@@ -24,6 +24,16 @@ public var matchPhoneTint: Bool {
     }
 }
 
+public var matchPhoneRoundingValue: Bool {
+    //match the iPhone's tint color
+    get{
+        return UserDefaults.standard.bool(forKey: "matchRoundingValue")
+    }
+    set{
+        UserDefaults.standard.set(newValue, forKey: "matchRoundingValue")
+    }
+}
+
 public var historyNums: [String] {
     //saves the history nums array, for use in the HistoryClassController()
     get{

@@ -38,6 +38,8 @@ class InterfaceController: WKInterfaceController {
     var operatorsArray = [WKInterfaceButton]()
     var numbersArray = [WKInterfaceButton]()
     
+    var roundValue: Int?
+    
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
         equationText = "Enter a number"
@@ -52,6 +54,12 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         
         NotificationCenter.default.addObserver(self, selector: #selector(MessageReceived), name: NSNotification.Name("MessageReceived"), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(RoundingMessageReceived), name: NSNotification.Name("RoundingMessageReceived"), object: nil)
+    }
+    
+    @objc func RoundingMessageReceived() {
+        roundValue = UserDefaults.standard.integer(forKey: "roundingPlaces")
     }
     
     @objc func MessageReceived() {
@@ -161,6 +169,7 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func equalsButtonTapped() {
         
-        equation.setText("\(equationText) = \(Parser.parseEquation(equation: equationText))")
+        equation.setText("\(equationText) = \(Parser.parseEquation(equation: equationText).round(places: roundValue ?? 0))")
+        
     }
 }
