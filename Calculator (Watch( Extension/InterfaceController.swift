@@ -43,24 +43,9 @@ class InterfaceController: WKInterfaceController {
         equationText = "Enter a number"
         equation.setText(equationText)
         
-        operatorsArray.append(divideButton)
-        operatorsArray.append(multiplyButton)
-        operatorsArray.append(subtractButton)
-        operatorsArray.append(addButton)
-        operatorsArray.append(clearButton)
-        operatorsArray.append(equalsButton)
+        numbersArray = [nineButton, eightButton, sevenButton, sixButton, fiveButton, fourButton, threeButton, twoButton, oneButton, zeroButton, decimalButton]
         
-        numbersArray.append(nineButton)
-        numbersArray.append(eightButton)
-        numbersArray.append(sevenButton)
-        numbersArray.append(sixButton)
-        numbersArray.append(fiveButton)
-        numbersArray.append(fourButton)
-        numbersArray.append(threeButton)
-        numbersArray.append(twoButton)
-        numbersArray.append(oneButton)
-        numbersArray.append(zeroButton)
-        numbersArray.append(decimalButton)
+        operatorsArray = [divideButton, multiplyButton, subtractButton, addButton, clearButton, equalsButton]
     }
     
     override func willActivate() {
