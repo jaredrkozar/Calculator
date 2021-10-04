@@ -67,10 +67,13 @@ private extension ExtensionDelegate {
             let content = immediateMessage.content
                   
             if content["regularColor"] != nil {
-                let colorasstring = UIColorFromString(string: content["regularColor"] as! String)
+                let regularcolorasstring = UIColorFromString(string: content["regularColor"] as! String)
+                let operatorcolorasstring = UIColorFromString(string: content["operatorColor"] as! String)
+                
+                UserDefaults.standard.set(regularcolorasstring, forKey: "regularColor")
+                UserDefaults.standard.set(operatorcolorasstring, forKey: "operatorColor")
                 
                 
-                UserDefaults.standard.set(colorasstring, forKey: "regularColor")
             }
             let matchtint = content["matchPhoneTintStatus"]
             

@@ -125,8 +125,24 @@
                         </group>
                     </items>
                     <connections>
+                        <outlet property="addButton" destination="IP3-iS-F8Q" id="J8W-2G-b82"/>
                         <outlet property="clearButton" destination="CJ1-kt-Yho" id="eB7-0X-Fc1"/>
+                        <outlet property="decimalButton" destination="zB6-kv-4dL" id="ixp-t9-9He"/>
+                        <outlet property="divideButton" destination="z3R-ki-oF2" id="t4q-UE-j6Y"/>
+                        <outlet property="eightButton" destination="6h2-Qz-Okb" id="8NI-nR-p6P"/>
+                        <outlet property="equalsButton" destination="Bs2-gG-ZUF" id="m0z-mk-3Mb"/>
                         <outlet property="equation" destination="iTh-N2-qsw" id="R3j-D9-Ls1"/>
+                        <outlet property="fiveButton" destination="GuP-6v-At9" id="AWs-dB-ep8"/>
+                        <outlet property="fourButton" destination="x0W-3Z-ZBw" id="pbl-9B-OY1"/>
+                        <outlet property="multiplyButton" destination="mN5-m7-bad" id="JG1-hD-qVo"/>
+                        <outlet property="nineButton" destination="dRM-be-yJW" id="krB-TY-iD2"/>
+                        <outlet property="oneButton" destination="54B-fo-NaL" id="8x1-Ts-v6A"/>
+                        <outlet property="sevenButton" destination="bhr-kT-Pf0" id="WKl-No-6hD"/>
+                        <outlet property="sixButton" destination="0ZY-i5-tQe" id="mql-5c-Oti"/>
+                        <outlet property="subtractButton" destination="YZr-rz-18P" id="RLZ-JX-Ubv"/>
+                        <outlet property="threeButton" destination="t7e-6J-NPl" id="Ecs-Nv-4Kv"/>
+                        <outlet property="twoButton" destination="ssV-hL-emo" id="vyn-9h-KiS"/>
+                        <outlet property="zeroButton" destination="8m5-b7-8JE" id="GW7-st-DZf"/>
                     </connections>
                 </controller>
             </objects>

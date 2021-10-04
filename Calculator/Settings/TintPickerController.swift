@@ -59,9 +59,10 @@ class TintPickerController: UITableViewController, UIColorPickerViewControllerDe
         navigationController?.navigationBar.tintColor = view.tintColor
         
         if matchPhoneTint == true {
-            let colorasstring = StringFromUIColor(color: currenttheme.regularcolor)
+            let regularcolorasstring = StringFromUIColor(color: currenttheme.regularcolor)
+            let operatorcolorasstring = StringFromUIColor(color: currenttheme.operatorcolor)
             
-             let message = ImmediateMessage(identifier: "message", content: ["regularColor": colorasstring, "matchPhoneTintStatus": matchPhoneTint])
+             let message = ImmediateMessage(identifier: "message", content: ["regularColor": regularcolorasstring, "operatorColor": operatorcolorasstring, "matchPhoneTintStatus": matchPhoneTint])
              
              Communicator.shared.send(message) { error in
                  print("Error sending immediate message", error)
