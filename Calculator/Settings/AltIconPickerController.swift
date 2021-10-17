@@ -8,7 +8,7 @@
 import UIKit
 
 class AltIconPickerController: UITableViewController {
-    var altIcons = ["Default (Green)", "Red", "Blue", "Gray", "Black and White"]
+    var altIcons = ["Blue", "Gray", "Green", "Orange", "Pink", "Red", "Yellow"]
     
     var selectedIcon: String = ""
     
@@ -45,18 +45,8 @@ class AltIconPickerController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //sets the alternate app icon, and sets selectedIcon to the text of the row the user tapped. This is sent to the SettingsView, where it updates the label in the Alternate App Icons cell.
-        if indexPath.row == 0 {
-            UIApplication.shared.setAlternateIconName(nil)
-        } else if indexPath.row == 1 {
-            UIApplication.shared.setAlternateIconName("redicon")
-        } else if indexPath.row == 2 {
-            UIApplication.shared.setAlternateIconName("blueicon")
-        } else if indexPath.row == 3 {
-            UIApplication.shared.setAlternateIconName("grayicon")
-        } else if indexPath.row == 4 {
-            UIApplication.shared.setAlternateIconName("blackandwhiteicon")
-            
-        }
+       
+        UIApplication.shared.setAlternateIconName(altIcons[indexPath.row])
         
         selectedIcon = altIcons[indexPath.row]
         altIconName = selectedIcon

@@ -22,47 +22,65 @@
 		</dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
-			<key>greenicon</key>
+			<key>Orange</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
-					<string>greenicon</string>
+					<string>Orange</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
-			<key>blackandwhiteicon</key>
+			<key>Green</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
-					<string>blackandwhiteicon</string>
+					<string>Green</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
-			<key>grayicon</key>
+			<key>Pink</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
-					<string>grayicon</string>
+					<string>Pink</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
-			<key>redicon</key>
+			<key>Yellow</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
-					<string>redicon</string>
+					<string>Yellow</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
-			<key>blueicon</key>
+			<key>Red</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
-					<string>blueicon</string>
+					<string>Red</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>Gray</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Gray</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>Blue</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Blue</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>
