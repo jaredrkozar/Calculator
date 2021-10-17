@@ -8,7 +8,6 @@
 import UIKit
 
 class SettingsCell: UITableViewCell {
-
     
     @IBOutlet var settingsCellIconContainer: UIView!
     

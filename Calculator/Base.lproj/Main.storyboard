@@ -734,36 +734,6 @@
             </objects>
             <point key="canvasLocation" x="4121.739130434783" y="851.78571428571422"/>
         </scene>
-        <!--Alternate App Icons-->
-        <scene sceneID="lDq-Sp-Xbr">
-            <objects>
-                <tableViewController storyboardIdentifier="appIconView" id="ur5-cV-Hdd" customClass="AltIconPickerController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="58" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="rqH-T6-yaJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="separatorColor" systemColor="systemGray3Color"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="altIconCell" rowHeight="58" id="eOF-qd-v88">
-                                <rect key="frame" x="20" y="49.5" width="374" height="58"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eOF-qd-v88" id="UHb-je-m1v">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="58"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="ur5-cV-Hdd" id="oNP-av-Vrc"/>
-                            <outlet property="delegate" destination="ur5-cV-Hdd" id="hPd-mL-1Eh"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Alternate App Icons" id="46w-6d-4zE"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xhm-ng-vyq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5865.217391304348" y="773.4375"/>
-        </scene>
         <!--Watch Settings View Controller-->
         <scene sceneID="j87-w1-Zvd">
             <objects>
@@ -842,6 +812,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2m-l8-gaJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6880" y="807"/>
+        </scene>
+        <!--Alt Icon Picker Controller-->
+        <scene sceneID="Tmz-jd-a59">
+            <objects>
+                <collectionViewController storyboardIdentifier="appIconView" id="6do-Jn-rbO" customClass="AltIconPickerController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="gmC-aJ-Sz3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" id="ctH-57-AMT">
+                            <size key="itemSize" width="80" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="icon" id="pO8-P3-KFo" customClass="AltIconCell" customModule="Calculator" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <size key="customSize" width="80" height="100"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="6do-Jn-rbO" id="OZn-TM-wsA"/>
+                            <outlet property="delegate" destination="6do-Jn-rbO" id="6n6-P4-EPE"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fU1-tQ-sEM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5986.9565217391309" y="851.78571428571422"/>
         </scene>
         <!--Tint Color-->
         <scene sceneID="g1M-z3-9N9">

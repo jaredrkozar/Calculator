@@ -1,58 +1,64 @@
 //
-//  AltAppIconPicker.swift
-//  Calculator
+//  AltIconPickerController.swift
+//  AltIconPickerController
 //
-//  Created by Jared Kozar on 5/22/21.
+//  Created by JaredKozar on 10/16/21.
 //
 
 import UIKit
 
-class AltIconPickerController: UITableViewController {
-    var altIcons = ["Blue", "Gray", "Green", "Orange", "Pink", "Red", "Yellow"]
-    
-    var selectedIcon: String = ""
+class AltIconPickerController: UICollectionViewController {
+
+    let icons = ["Green", "Red", "Blue", "Orange", "Pink", "Red", "Yellow"]
     
     override func viewDidLoad() {
-        //sets the correct tint color when the view is loaded
         super.viewDidLoad()
 
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Register cell classes
+        let nib = UINib(nibName: "AltIconCell", bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: "AltIconCell")
+        
+        // Do any additional setup after loading the view.
     }
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+    // MARK: UICollectionViewDataSource
+
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
         return 1
     }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return altIcons.count
+
+
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of items
+        return icons.count
     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //finds the first instance of the currently selected alternate icon in the altIcons array. If the index.row value equals the place of the currently selected alternate icon value in the array, that row is given a checkmark accessory
-        let cell = tableView.dequeueReusableCell(withIdentifier: "altIconCell", for: indexPath)
-        cell.textLabel?.text = altIcons[indexPath.row]
-        
-        
-        let iconIndex = altIcons.firstIndex(of: "\(altIconName)")
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AltIconCell", for: indexPath) as! AltIconCell
 
-        if indexPath.row == iconIndex {
-            cell.accessoryType = .checkmark
-        } else {
-            cell.accessoryType = .none
-        }
-        
+        cell.appIcon.image = UIImage(named: icons[indexPath.item])
+        cell.appIcon.layer.cornerRadius = 9.0
+        // Configure the cell
+    
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //sets the alternate app icon, and sets selectedIcon to the text of the row the user tapped. This is sent to the SettingsView, where it updates the label in the Alternate App Icons cell.
-       
-        UIApplication.shared.setAlternateIconName(altIcons[indexPath.row])
-        
-        selectedIcon = altIcons[indexPath.row]
-        altIconName = selectedIcon
-        
-        NotificationCenter.default.post(name: Notification.Name( "updateSettingsText"), object: nil)
-        navigationController?.popViewController(animated: true)
+
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        UIApplication.shared.setAlternateIconName(icons[indexPath.item])
     }
-    
+
 }
