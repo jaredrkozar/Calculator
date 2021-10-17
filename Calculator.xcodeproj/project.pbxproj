@@ -29,6 +29,7 @@
 		7F579F3C271BAD4C00385220 /* AltIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F579F3A271BAD4C00385220 /* AltIconCell.swift */; };
 		7F579F3D271BAD4C00385220 /* AltIconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F579F3B271BAD4C00385220 /* AltIconCell.xib */; };
 		7F579F41271BADD900385220 /* AltIconPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F579F40271BADD900385220 /* AltIconPickerController.swift */; };
+		7F579F43271BE2D900385220 /* IconCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F579F42271BE2D800385220 /* IconCollectionReusableView.swift */; };
 		7F59B37226F301B100B6F905 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F59B37026F301B100B6F905 /* Interface.storyboard */; };
 		7F59B37426F301B200B6F905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F59B37326F301B200B6F905 /* Assets.xcassets */; };
 		7F59B37A26F301B200B6F905 /* Calculator (Watch( Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7F59B37926F301B200B6F905 /* Calculator (Watch( Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -127,6 +128,7 @@
 		7F579F3A271BAD4C00385220 /* AltIconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltIconCell.swift; sourceTree = "<group>"; };
 		7F579F3B271BAD4C00385220 /* AltIconCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AltIconCell.xib; sourceTree = "<group>"; };
 		7F579F40271BADD900385220 /* AltIconPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltIconPickerController.swift; sourceTree = "<group>"; };
+		7F579F42271BE2D800385220 /* IconCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCollectionReusableView.swift; sourceTree = "<group>"; };
 		7F59B36E26F301B100B6F905 /* Calculator (Watch(.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calculator (Watch(.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F59B37126F301B100B6F905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		7F59B37326F301B200B6F905 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -321,6 +323,7 @@
 				7F687252264A32380061A735 /* TintPickerController.swift */,
 				7F68725C265971940061A735 /* ThemePickerController.swift */,
 				7F579F40271BADD900385220 /* AltIconPickerController.swift */,
+				7F579F42271BE2D800385220 /* IconCollectionReusableView.swift */,
 				7F68725A2657437A0061A735 /* RoundingPickerController.swift */,
 				7FC123042672852C00D3599E /* KeyClickSoundController.swift */,
 				7FB46AF9267487ED005525AF /* FontPickerController.swift */,
@@ -647,6 +650,7 @@
 				7FCDE28C26EB18AC00D11BC1 /* operatorCellView.swift in Sources */,
 				7F2E799526E7CD2F00D49FB3 /* SettingsViewController.swift in Sources */,
 				7F579F41271BADD900385220 /* AltIconPickerController.swift in Sources */,
+				7F579F43271BE2D900385220 /* IconCollectionReusableView.swift in Sources */,
 				7F687211264701F60061A735 /* AppDelegate.swift in Sources */,
 				7F68725D265971940061A735 /* ThemePickerController.swift in Sources */,
 				7F2E799726E7FFCA00D49FB3 /* Extensions.swift in Sources */,

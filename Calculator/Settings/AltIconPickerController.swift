@@ -21,6 +21,7 @@ class AltIconPickerController: UICollectionViewController {
         let nib = UINib(nibName: "AltIconCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "AltIconCell")
         
+        collectionView.register(IconCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader , withReuseIdentifier: IconCollectionReusableView.identifier)
         // Do any additional setup after loading the view.
     }
 
@@ -38,18 +39,21 @@ class AltIconPickerController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 2
     }
-
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return icons.count
+        if section == 1 {
+            return 5
+        } else {
+            return icons.count
+        }
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AltIconCell", for: indexPath) as! AltIconCell
-
+        
         cell.appIcon.image = UIImage(named: icons[indexPath.item])
         cell.appIcon.layer.cornerRadius = 9.0
         // Configure the cell
@@ -60,5 +64,19 @@ class AltIconPickerController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         UIApplication.shared.setAlternateIconName(icons[indexPath.item])
     }
-
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+       
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: IconCollectionReusableView.identifier, for: indexPath) as! IconCollectionReusableView
+        
+        header.configure()
+   
+        if indexPath.section == 1 {
+            header.label.text = "Dark icons"
+        } else {
+            header.label.text = "dd"
+        }
+        view.addSubview(header)
+        return header
+    }
 }
