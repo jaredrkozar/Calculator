@@ -94,6 +94,78 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
+			<key>Orange (Dark bg)</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Orange (Dark bg)</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>Blue (Dark bg)</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Blue (Dark bg)</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>Dark Blue (Dark bg)</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Dark Blue (Dark bg)</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>Gray (Dark bg)</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Gray (Dark bg)</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>Green (Dark bg)</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Green (Dark bg)</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>Pink (Dark bg)</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Pink (Dark bg)</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>Red (Dark bg)</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Red (Dark bg)</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>Yellow (Dark bg)</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Yellow (Dark bg)</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
 		</dict>
 	</dict>
 	<key>CFBundleDevelopmentRegion</key>
