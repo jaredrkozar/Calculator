@@ -85,6 +85,15 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
+			<key>Dark Blue</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Dark Blue</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
 		</dict>
 	</dict>
 	<key>CFBundleDevelopmentRegion</key>

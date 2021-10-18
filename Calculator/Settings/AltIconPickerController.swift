@@ -9,7 +9,7 @@ import UIKit
 
 class AltIconPickerController: UICollectionViewController {
 
-    let icons = ["Green", "Red", "Blue", "Orange", "Pink", "Red", "Yellow"]
+    let icons = [["Green", "Red", "Blue", "Dark Blue", "Orange", "Pink", "Red", "Yellow"], ["Green (Dark bg)", "Red (Dark bg)", "Blue (Dark bg)", "Dark Blue (Dark bg)", "Orange (Dark bg)", "Pink (Dark bg)", "Red (Dark bg)", "Yellow (Dark bg)"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,22 +39,18 @@ class AltIconPickerController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 2
+        return icons.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        if section == 1 {
-            return 5
-        } else {
-            return icons.count
-        }
+        return icons[section].count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AltIconCell", for: indexPath) as! AltIconCell
         
-        cell.appIcon.image = UIImage(named: icons[indexPath.item])
+        cell.appIcon.image = UIImage(named: icons[indexPath.section][indexPath.item])
         cell.appIcon.layer.cornerRadius = 9.0
         // Configure the cell
     
@@ -62,7 +58,7 @@ class AltIconPickerController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        UIApplication.shared.setAlternateIconName(icons[indexPath.item])
+        UIApplication.shared.setAlternateIconName(icons[indexPath.section][indexPath.item])
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -72,9 +68,9 @@ class AltIconPickerController: UICollectionViewController {
         header.configure()
    
         if indexPath.section == 1 {
-            header.label.text = "Dark icons"
+            header.label.text = " Dark icons"
         } else {
-            header.label.text = "dd"
+            header.label.text = " Light icons"
         }
         view.addSubview(header)
         return header

@@ -25,7 +25,6 @@
 		7F579F2C271BA0C900385220 /* Orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F579F25271BA0C800385220 /* Orange.png */; };
 		7F579F2D271BA0C900385220 /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F579F26271BA0C800385220 /* Red.png */; };
 		7F579F2E271BA0C900385220 /* Gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F579F27271BA0C800385220 /* Gray.png */; };
-		7F579F2F271BA0C900385220 /* Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F579F28271BA0C900385220 /* Blue.png */; };
 		7F579F3C271BAD4C00385220 /* AltIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F579F3A271BAD4C00385220 /* AltIconCell.swift */; };
 		7F579F3D271BAD4C00385220 /* AltIconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F579F3B271BAD4C00385220 /* AltIconCell.xib */; };
 		7F579F41271BADD900385220 /* AltIconPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F579F40271BADD900385220 /* AltIconPickerController.swift */; };
@@ -53,6 +52,16 @@
 		7F6E65112680F06800096EED /* Typewriter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7F6E650D2680F06800096EED /* Typewriter.mp3 */; };
 		7F6E65122680F06800096EED /* Click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7F6E650E2680F06800096EED /* Click.mp3 */; };
 		7F7E275326818FCF00076D70 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F7E275226818FCB00076D70 /* SF-Pro.ttf */; };
+		7FA82ADE271D01B200728A9D /* Dark Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82ADD271D01B200728A9D /* Dark Blue.png */; };
+		7FA82AEA271D05E600728A9D /* Pink (Dark bg).png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82AE2271D05E500728A9D /* Pink (Dark bg).png */; };
+		7FA82AEB271D05E600728A9D /* Yellow (Dark bg).png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82AE3271D05E500728A9D /* Yellow (Dark bg).png */; };
+		7FA82AEC271D05E600728A9D /* Red (Dark bg).png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82AE4271D05E500728A9D /* Red (Dark bg).png */; };
+		7FA82AED271D05E600728A9D /* Gray (Dark bg).png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82AE5271D05E500728A9D /* Gray (Dark bg).png */; };
+		7FA82AEE271D05E600728A9D /* Orange (Dark bg).png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82AE6271D05E500728A9D /* Orange (Dark bg).png */; };
+		7FA82AEF271D05E600728A9D /* Green (Dark bg).png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82AE7271D05E500728A9D /* Green (Dark bg).png */; };
+		7FA82AF0271D05E600728A9D /* Dark Blue (Dark bg).png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82AE8271D05E600728A9D /* Dark Blue (Dark bg).png */; };
+		7FA82AF1271D05E600728A9D /* Blue (Dark bg).png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82AE9271D05E600728A9D /* Blue (Dark bg).png */; };
+		7FA82AF3271D073500728A9D /* Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82AF2271D073500728A9D /* Blue.png */; };
 		7FB46AF826748318005525AF /* HistoryClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB46AF726748318005525AF /* HistoryClassController.swift */; };
 		7FB46AFA267487ED005525AF /* FontPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB46AF9267487ED005525AF /* FontPickerController.swift */; };
 		7FB46B002676E51D005525AF /* Avenir.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 7FB46AFF2676E51D005525AF /* Avenir.ttc */; };
@@ -124,7 +133,6 @@
 		7F579F25271BA0C800385220 /* Orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orange.png; sourceTree = "<group>"; };
 		7F579F26271BA0C800385220 /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
 		7F579F27271BA0C800385220 /* Gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gray.png; sourceTree = "<group>"; };
-		7F579F28271BA0C900385220 /* Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue.png; sourceTree = "<group>"; };
 		7F579F3A271BAD4C00385220 /* AltIconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltIconCell.swift; sourceTree = "<group>"; };
 		7F579F3B271BAD4C00385220 /* AltIconCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AltIconCell.xib; sourceTree = "<group>"; };
 		7F579F40271BADD900385220 /* AltIconPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltIconPickerController.swift; sourceTree = "<group>"; };
@@ -156,6 +164,16 @@
 		7F6E650D2680F06800096EED /* Typewriter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Typewriter.mp3; sourceTree = "<group>"; };
 		7F6E650E2680F06800096EED /* Click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Click.mp3; sourceTree = "<group>"; };
 		7F7E275226818FCB00076D70 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro.ttf"; path = "../../../../../../../Library/Fonts/SF-Pro.ttf"; sourceTree = "<group>"; };
+		7FA82ADD271D01B200728A9D /* Dark Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dark Blue.png"; sourceTree = "<group>"; };
+		7FA82AE2271D05E500728A9D /* Pink (Dark bg).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink (Dark bg).png"; sourceTree = "<group>"; };
+		7FA82AE3271D05E500728A9D /* Yellow (Dark bg).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow (Dark bg).png"; sourceTree = "<group>"; };
+		7FA82AE4271D05E500728A9D /* Red (Dark bg).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red (Dark bg).png"; sourceTree = "<group>"; };
+		7FA82AE5271D05E500728A9D /* Gray (Dark bg).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gray (Dark bg).png"; sourceTree = "<group>"; };
+		7FA82AE6271D05E500728A9D /* Orange (Dark bg).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange (Dark bg).png"; sourceTree = "<group>"; };
+		7FA82AE7271D05E500728A9D /* Green (Dark bg).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green (Dark bg).png"; sourceTree = "<group>"; };
+		7FA82AE8271D05E600728A9D /* Dark Blue (Dark bg).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dark Blue (Dark bg).png"; sourceTree = "<group>"; };
+		7FA82AE9271D05E600728A9D /* Blue (Dark bg).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue (Dark bg).png"; sourceTree = "<group>"; };
+		7FA82AF2271D073500728A9D /* Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue.png; sourceTree = "<group>"; };
 		7FB46AF726748318005525AF /* HistoryClassController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryClassController.swift; sourceTree = "<group>"; };
 		7FB46AF9267487ED005525AF /* FontPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontPickerController.swift; sourceTree = "<group>"; };
 		7FB46AFF2676E51D005525AF /* Avenir.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Avenir.ttc; sourceTree = "<group>"; };
@@ -304,6 +322,36 @@
 			path = Calculator;
 			sourceTree = "<group>";
 		};
+		7FA82AE0271D05D300728A9D /* Light */ = {
+			isa = PBXGroup;
+			children = (
+				7F579F27271BA0C800385220 /* Gray.png */,
+				7F579F24271BA0C800385220 /* Green.png */,
+				7F579F25271BA0C800385220 /* Orange.png */,
+				7F579F22271BA0C800385220 /* Pink.png */,
+				7F579F26271BA0C800385220 /* Red.png */,
+				7F579F23271BA0C800385220 /* Yellow.png */,
+				7FA82ADD271D01B200728A9D /* Dark Blue.png */,
+				7FA82AF2271D073500728A9D /* Blue.png */,
+			);
+			path = Light;
+			sourceTree = "<group>";
+		};
+		7FA82AE1271D05DA00728A9D /* Dark */ = {
+			isa = PBXGroup;
+			children = (
+				7FA82AE9271D05E600728A9D /* Blue (Dark bg).png */,
+				7FA82AE8271D05E600728A9D /* Dark Blue (Dark bg).png */,
+				7FA82AE5271D05E500728A9D /* Gray (Dark bg).png */,
+				7FA82AE7271D05E500728A9D /* Green (Dark bg).png */,
+				7FA82AE6271D05E500728A9D /* Orange (Dark bg).png */,
+				7FA82AE2271D05E500728A9D /* Pink (Dark bg).png */,
+				7FA82AE4271D05E500728A9D /* Red (Dark bg).png */,
+				7FA82AE3271D05E500728A9D /* Yellow (Dark bg).png */,
+			);
+			path = Dark;
+			sourceTree = "<group>";
+		};
 		7FB46B012676F067005525AF /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,13 +393,8 @@
 		7FC12314267287E600D3599E /* Alternate App Icons */ = {
 			isa = PBXGroup;
 			children = (
-				7F579F28271BA0C900385220 /* Blue.png */,
-				7F579F27271BA0C800385220 /* Gray.png */,
-				7F579F24271BA0C800385220 /* Green.png */,
-				7F579F25271BA0C800385220 /* Orange.png */,
-				7F579F22271BA0C800385220 /* Pink.png */,
-				7F579F26271BA0C800385220 /* Red.png */,
-				7F579F23271BA0C800385220 /* Yellow.png */,
+				7FA82AE1271D05DA00728A9D /* Dark */,
+				7FA82AE0271D05D300728A9D /* Light */,
 			);
 			path = "Alternate App Icons";
 			sourceTree = "<group>";
@@ -491,25 +534,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA82AEE271D05E600728A9D /* Orange (Dark bg).png in Resources */,
 				7F687220264701F80061A735 /* LaunchScreen.storyboard in Resources */,
 				7F2E799926E81F6100D49FB3 /* NewYork.ttf in Resources */,
+				7FA82AEF271D05E600728A9D /* Green (Dark bg).png in Resources */,
 				7F579F2C271BA0C900385220 /* Orange.png in Resources */,
 				7FB46B032676F147005525AF /* SF-Pro-Rounded-Regular.otf in Resources */,
 				7F6E65102680F06800096EED /* None.mp3 in Resources */,
 				7F68721D264701F80061A735 /* Assets.xcassets in Resources */,
+				7FA82ADE271D01B200728A9D /* Dark Blue.png in Resources */,
+				7FA82AEB271D05E600728A9D /* Yellow (Dark bg).png in Resources */,
 				7FCDE28D26EB18AC00D11BC1 /* operatorCellView.xib in Resources */,
-				7F579F2F271BA0C900385220 /* Blue.png in Resources */,
 				7F687218264701F60061A735 /* Main.storyboard in Resources */,
 				7F6E65112680F06800096EED /* Typewriter.mp3 in Resources */,
 				7F2E799326E7C1BA00D49FB3 /* SettingsCell.xib in Resources */,
 				7F579F2E271BA0C900385220 /* Gray.png in Resources */,
 				7F6E65122680F06800096EED /* Click.mp3 in Resources */,
 				7F7E275326818FCF00076D70 /* SF-Pro.ttf in Resources */,
+				7FA82AEA271D05E600728A9D /* Pink (Dark bg).png in Resources */,
 				7F579F3D271BAD4C00385220 /* AltIconCell.xib in Resources */,
 				7F579F2A271BA0C900385220 /* Yellow.png in Resources */,
+				7FA82AEC271D05E600728A9D /* Red (Dark bg).png in Resources */,
+				7FA82AED271D05E600728A9D /* Gray (Dark bg).png in Resources */,
 				7FB46B002676E51D005525AF /* Avenir.ttc in Resources */,
 				7F579F2B271BA0C900385220 /* Green.png in Resources */,
+				7FA82AF0271D05E600728A9D /* Dark Blue (Dark bg).png in Resources */,
 				7F579F2D271BA0C900385220 /* Red.png in Resources */,
+				7FA82AF1271D05E600728A9D /* Blue (Dark bg).png in Resources */,
+				7FA82AF3271D073500728A9D /* Blue.png in Resources */,
 				7F6E650F2680F06800096EED /* Coin.mp3 in Resources */,
 				7F579F29271BA0C900385220 /* Pink.png in Resources */,
 			);
