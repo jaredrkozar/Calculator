@@ -11,7 +11,7 @@ This app uses my custom math parser, [SwiftyMathParser](https://github.com/jared
 
 - Pick between 4 fonts, or you can select a font installed on your device.
 
-- choose between 5 different alternate app icons to suit your preferences
+- choose between 16 different alternate app icons to suit your preferences
 
 - select rounding value for percise mathematical calculations
 
