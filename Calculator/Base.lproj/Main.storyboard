@@ -855,7 +855,7 @@
             </objects>
             <point key="canvasLocation" x="5986.9565217391309" y="851.78571428571422"/>
         </scene>
-        <!--Tint Color-->
+        <!--Tint Picker Controller-->
         <scene sceneID="g1M-z3-9N9">
             <objects>
                 <tableViewController storyboardIdentifier="tintView" id="jgr-TG-yh0" customClass="TintPickerController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
@@ -879,7 +879,7 @@
                             <outlet property="delegate" destination="jgr-TG-yh0" id="Xbe-Mr-1HJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Tint Color" leftItemsSupplementBackButton="YES" id="7Ga-xo-mlY">
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="7Ga-xo-mlY">
                         <barButtonItem key="backBarButtonItem" title="Settings" id="e0V-hL-y5g"/>
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="I7p-NG-aQB">
                             <connections>

@@ -16,7 +16,8 @@ class AltIconPickerController: UICollectionViewController {
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        title = "Alternate App Icons"
+        
         // Register cell classes
         let nib = UINib(nibName: "AltIconCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "AltIconCell")
