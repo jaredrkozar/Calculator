@@ -103,7 +103,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func operationButtonTapped(_ sender: UIButton) {
-        //the function checks what rounding value is currently selected and sets it to the SelectedRound variable.
+        //this function enables the equals button when an operator button is tapped, and appends the operator that is tapped to the answer.
         checkAnswer()
         
         self.equation.text!.append(sender.currentTitle!)
@@ -113,14 +113,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func equalsButtonTapped(_ sender: Any) {
-        //parse equation using SwiftyMath
+        //parse equation using SwiftyMathParser
         equation.text?.append(contentsOf: " = \(Parser.parseEquation(equation: equation.text!).round(places: roundingPlaces))")
         historyNums.append(equation.text!)
     }
 
     
     @objc func updateTint(_ notification: Notification) {
-        //gets the current tint color from the tintColor function in GlobalSettings, and sets the color of the navigation bar and UIButtons to that color.
+        //gets the current tint color of the number/operator buttons to the current theme's operator color and number color respectively. It also sets the navigation bar's tint color to the current theme's number color.
         
         for button in numberButtons {
             button.backgroundColor = currenttheme.regularcolor
@@ -144,7 +144,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func backspaceTapped(_ sender: Any) {
-        //if the backspace button is tapped, the last character in the answer if removed, and checkAnswer() is called to see if the answer is empty; if it is, the backspace button is disabled.
+        //if the backspace button is tapped, the last character in the answer is removed, and checkAnswer() is called to see if the answer is empty; if it is, the backspace button is disabled.
         equation.text!.removeLast()
         checkAnswer()
     }
@@ -160,7 +160,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func moreOpsButton(_ sender: Any) {
-        
+        //brings up the More Operators sheet
         let vc = MoreOperatorsViewController(collectionViewLayout: UICollectionViewFlowLayout())
         
         let navigationController = UINavigationController(rootViewController: vc)
