@@ -9,7 +9,7 @@ import UIKit
 
 class AltIconPickerController: UICollectionViewController {
 
-    let icons = [["Green", "Red", "Blue", "Dark Blue", "Orange", "Pink", "Red", "Yellow"], ["Green (Dark bg)", "Red (Dark bg)", "Blue (Dark bg)", "Dark Blue (Dark bg)", "Orange (Dark bg)", "Pink (Dark bg)", "Red (Dark bg)", "Yellow (Dark bg)"]]
+    let icons = [["Green", "Red", "Blue", "Dark Blue", "Orange", "Pink", "Gray", "Yellow"], ["Green (Dark bg)", "Red (Dark bg)", "Blue (Dark bg)", "Dark Blue (Dark bg)", "Orange (Dark bg)", "Pink (Dark bg)", "Gray (Dark bg)", "Yellow (Dark bg)"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()

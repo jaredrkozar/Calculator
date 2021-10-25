@@ -7,7 +7,7 @@
 
 import WatchKit
 import Foundation
-import SwiftyMathParser
+//import communicator
 
 class InterfaceController: WKInterfaceController {
     @IBOutlet var equation: WKInterfaceLabel!
@@ -169,7 +169,7 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func equalsButtonTapped() {
         
-        equation.setText("\(equationText) = \(Parser.parseEquation(equation: equationText).round(places: roundValue ?? 0))")
+//        equation.setText("\(equationText) = \(Parser.parseEquation(equation: equationText).round(places: roundValue ?? 0))")
         
     }
 }
