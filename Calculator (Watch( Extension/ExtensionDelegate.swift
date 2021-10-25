@@ -6,6 +6,7 @@
 //
 
 import WatchKit
+import Communicator
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
@@ -62,39 +63,39 @@ private extension ExtensionDelegate {
     
     func colorObservations() {
         
-//        ImmediateMessage.observe { immediateMessage in
-//
-//            let content = immediateMessage.content
-//                  
-//            if content["regularColor"] != nil {
-//                let regularcolorasstring = UIColorFromString(string: content["regularColor"] as! String)
-//                let operatorcolorasstring = UIColorFromString(string: content["operatorColor"] as! String)
-//                
-//                UserDefaults.standard.set(regularcolorasstring, forKey: "regularColor")
-//                UserDefaults.standard.set(operatorcolorasstring, forKey: "operatorColor")
-//                
-//                
-//            }
-//            let matchtint = content["matchPhoneTintStatus"]
-//            
-//            UserDefaults.standard.set(matchtint, forKey: "matchPhoneTint")
-//            
-//            NotificationCenter.default.post(name: Notification.Name("MessageReceived"), object: nil)
-//        }
+        ImmediateMessage.observe { immediateMessage in
+
+            let content = immediateMessage.content
+                  
+            if content["regularColor"] != nil {
+                let regularcolorasstring = UIColorFromString(string: content["regularColor"] as! String)
+                let operatorcolorasstring = UIColorFromString(string: content["operatorColor"] as! String)
+                
+                UserDefaults.standard.set(regularcolorasstring, forKey: "regularColor")
+                UserDefaults.standard.set(operatorcolorasstring, forKey: "operatorColor")
+                
+                
+            }
+            let matchtint = content["matchPhoneTintStatus"]
+            
+            UserDefaults.standard.set(matchtint, forKey: "matchPhoneTint")
+            
+            NotificationCenter.default.post(name: Notification.Name("MessageReceived"), object: nil)
+        }
     }
     
     func roundingObservations() {
         
-//        ImmediateMessage.observe { immediateMessage in
-//
-//            let content = immediateMessage.content
-//                  
-//            if content["roundingPlaces"] != nil {
-//                UserDefaults.standard.set(content["roundingPlaces"], forKey: "roundingPlaces")
-//            
-//            }
-//            
-//            NotificationCenter.default.post(name: Notification.Name("RoundingMessageReceived"), object: nil)
-//        }
+        ImmediateMessage.observe { immediateMessage in
+
+            let content = immediateMessage.content
+                  
+            if content["roundingPlaces"] != nil {
+                UserDefaults.standard.set(content["roundingPlaces"], forKey: "roundingPlaces")
+            
+            }
+            
+            NotificationCenter.default.post(name: Notification.Name("RoundingMessageReceived"), object: nil)
+        }
     }
 }
