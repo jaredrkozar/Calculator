@@ -11,9 +11,10 @@ import SwiftyMathParser
 
 class ViewController: UIViewController {
 
-    @IBOutlet var numberButtons: [UIButton]!
-
-    @IBOutlet var operatorButtons: [UIButton]!
+    
+    @IBOutlet var numberButtons: [CustomCalcButton]!
+    
+    @IBOutlet var operatorButtons: [CustomCalcButton]!
     
     let nc = NotificationCenter.default
     var historyNumsList = [String]()
@@ -26,14 +27,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        for button in numberButtons {
-            button.layer.cornerRadius = 9.0
-        }
-        
-        for button in operatorButtons {
-                button.layer.cornerRadius = 9.0
-        }
         
         notifications()
         setupButtons()
@@ -122,13 +115,10 @@ class ViewController: UIViewController {
     @objc func updateTint(_ notification: Notification) {
         //gets the current tint color of the number/operator buttons to the current theme's operator color and number color respectively. It also sets the navigation bar's tint color to the current theme's number color.
         
-        for button in numberButtons {
-            button.backgroundColor = currenttheme.regularcolor
-        }
+        numberButtons.forEach({$0.backgroundColor = currenttheme.regularcolor})
+
+        operatorButtons.forEach({$0.backgroundColor = currenttheme.operatorcolor})
         
-        for button in operatorButtons {
-            button.backgroundColor = currenttheme.operatorcolor
-        }
         view.tintColor = currenttheme.regularcolor
         navigationController?.navigationBar.tintColor = currenttheme.regularcolor
     }

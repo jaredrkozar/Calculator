@@ -68,6 +68,7 @@
 		7FB46B032676F147005525AF /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB46B022676F147005525AF /* SF-Pro-Rounded-Regular.otf */; };
 		7FC123052672852C00D3599E /* KeyClickSoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC123042672852C00D3599E /* KeyClickSoundController.swift */; };
 		7FC7FA7526F545AF00CFAB2C /* WatchSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC7FA7426F545AF00CFAB2C /* WatchSettingsViewController.swift */; };
+		7FCBD1C42786261500E02CCF /* CustomCalcButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCBD1C32786261500E02CCF /* CustomCalcButton.swift */; };
 		7FCDE28726EB160A00D11BC1 /* MoreOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCDE28626EB160A00D11BC1 /* MoreOperatorsViewController.swift */; };
 		7FCDE28C26EB18AC00D11BC1 /* operatorCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCDE28A26EB18AC00D11BC1 /* operatorCellView.swift */; };
 		7FCDE28D26EB18AC00D11BC1 /* operatorCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FCDE28B26EB18AC00D11BC1 /* operatorCellView.xib */; };
@@ -180,6 +181,7 @@
 		7FB46B022676F147005525AF /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
 		7FC123042672852C00D3599E /* KeyClickSoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyClickSoundController.swift; sourceTree = "<group>"; };
 		7FC7FA7426F545AF00CFAB2C /* WatchSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSettingsViewController.swift; sourceTree = "<group>"; };
+		7FCBD1C32786261500E02CCF /* CustomCalcButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalcButton.swift; sourceTree = "<group>"; };
 		7FCDE28626EB160A00D11BC1 /* MoreOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreOperatorsViewController.swift; sourceTree = "<group>"; };
 		7FCDE28A26EB18AC00D11BC1 /* operatorCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = operatorCellView.swift; sourceTree = "<group>"; };
 		7FCDE28B26EB18AC00D11BC1 /* operatorCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = operatorCellView.xib; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 			children = (
 				7FCDE28B26EB18AC00D11BC1 /* operatorCellView.xib */,
 				7F2E799026E7C1BA00D49FB3 /* SettingsCell.swift */,
+				7FCBD1C32786261500E02CCF /* CustomCalcButton.swift */,
 				7F579F3A271BAD4C00385220 /* AltIconCell.swift */,
 				7F579F3B271BAD4C00385220 /* AltIconCell.xib */,
 				7F2E799126E7C1BA00D49FB3 /* SettingsCell.xib */,
@@ -708,6 +711,7 @@
 				7F2E799726E7FFCA00D49FB3 /* Extensions.swift in Sources */,
 				7FB46AFA267487ED005525AF /* FontPickerController.swift in Sources */,
 				7FC7FA7526F545AF00CFAB2C /* WatchSettingsViewController.swift in Sources */,
+				7FCBD1C42786261500E02CCF /* CustomCalcButton.swift in Sources */,
 				7F687213264701F60061A735 /* SceneDelegate.swift in Sources */,
 				7FB46AF826748318005525AF /* HistoryClassController.swift in Sources */,
 			);
