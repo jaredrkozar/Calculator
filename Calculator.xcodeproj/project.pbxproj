@@ -307,20 +307,14 @@
 			children = (
 				7F687210264701F60061A735 /* AppDelegate.swift */,
 				7F687212264701F60061A735 /* SceneDelegate.swift */,
-				7F687214264701F60061A735 /* ViewController.swift */,
-				7FCDE28626EB160A00D11BC1 /* MoreOperatorsViewController.swift */,
-				7FB46AF726748318005525AF /* HistoryClassController.swift */,
 				7F687216264701F60061A735 /* Main.storyboard */,
-				7F10E42E26EE70A2005D069C /* NewThemeController.swift */,
 				7F68721E264701F80061A735 /* LaunchScreen.storyboard */,
 				7F687221264701F80061A735 /* Info.plist */,
 				7F687219264701F60061A735 /* Calculator.xcdatamodeld */,
 				7F68721C264701F80061A735 /* Assets.xcassets */,
+				7FCBD1C527862DA900E02CCF /* View Controllers */,
 				7F10E43026EE7940005D069C /* Model */,
-				7FC12306267285E400D3599E /* Settings */,
-				7FB46B012676F067005525AF /* Fonts */,
-				7FC123092672879100D3599E /* Sound Effects */,
-				7FC12314267287E600D3599E /* Alternate App Icons */,
+				7FCBD1C627862DC900E02CCF /* Assets */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -400,6 +394,28 @@
 				7FA82AE0271D05D300728A9D /* Light */,
 			);
 			path = "Alternate App Icons";
+			sourceTree = "<group>";
+		};
+		7FCBD1C527862DA900E02CCF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7FC12306267285E400D3599E /* Settings */,
+				7FCDE28626EB160A00D11BC1 /* MoreOperatorsViewController.swift */,
+				7F10E42E26EE70A2005D069C /* NewThemeController.swift */,
+				7FB46AF726748318005525AF /* HistoryClassController.swift */,
+				7F687214264701F60061A735 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7FCBD1C627862DC900E02CCF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7FC12314267287E600D3599E /* Alternate App Icons */,
+				7FC123092672879100D3599E /* Sound Effects */,
+				7FB46B012676F067005525AF /* Fonts */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		DA50FC51D4079D39D3D336B3 /* Frameworks */ = {
