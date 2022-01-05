@@ -8,6 +8,7 @@
 import WatchKit
 import Foundation
 import Communicator
+import SwiftyMathParser
 
 class InterfaceController: WKInterfaceController {
     @IBOutlet var equation: WKInterfaceLabel!

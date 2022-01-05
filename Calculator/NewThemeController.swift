@@ -21,7 +21,7 @@ class NewThemeController: UIViewController {
         colorwell.supportsAlpha = false
        
         colorwell.title = "Regular Color"
-        colorwell.frame = CGRect(x: UIScreen.main.bounds.width - 60, y: 275, width: 40, height: 40)
+        colorwell.frame = CGRect(x: UIScreen.main.bounds.width - 60, y: 270, width: 40, height: 40)
 
         return colorwell
     }()

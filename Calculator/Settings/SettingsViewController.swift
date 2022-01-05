@@ -76,7 +76,7 @@ class SettingsViewController: UITableViewController {
         
         models.append(Sections(title: "Advanced", settings: [
             
-            SettingsOptions(title: "Rounding", option: "\(roundingPlaces) decimal places", icon: UIImage(systemName: "textformat.123"), iconBGColor: UIColor(named: "Yellow")!) {
+            SettingsOptions(title: "Rounding", option: "\(roundingPlaces)", icon: UIImage(systemName: "textformat.123"), iconBGColor: UIColor(named: "Yellow")!) {
                 
                 let roundingSettings = self.storyboard!.instantiateViewController(withIdentifier: "roundingView") as! RoundingPickerController
                 self.show(roundingSettings, sender: true)
