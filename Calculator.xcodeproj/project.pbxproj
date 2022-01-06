@@ -16,6 +16,9 @@
 		7F2E799526E7CD2F00D49FB3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2E799426E7CD2F00D49FB3 /* SettingsViewController.swift */; };
 		7F2E799726E7FFCA00D49FB3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2E799626E7FFCA00D49FB3 /* Extensions.swift */; };
 		7F2E799926E81F6100D49FB3 /* NewYork.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F2E799826E81F6100D49FB3 /* NewYork.ttf */; };
+		7F3765F22786BA3900A107FF /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F3765F12786BA3900A107FF /* SF-Pro.ttf */; };
+		7F3765F62786BAAD00A107FF /* Dark Blue (Dark bg).png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3765F52786BAAD00A107FF /* Dark Blue (Dark bg).png */; };
+		7F3765F82786BAF400A107FF /* Dark Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3765F72786BAF400A107FF /* Dark Blue.png */; };
 		7F4174EB26F45AB800249004 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2E799626E7FFCA00D49FB3 /* Extensions.swift */; };
 		7F4174EC26F45AE800249004 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10E42B26ED8E46005D069C /* Themes.swift */; };
 		7F4174ED26F45CD800249004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F68721C264701F80061A735 /* Assets.xcassets */; };
@@ -48,9 +51,7 @@
 		7F6E65102680F06800096EED /* None.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7F6E650C2680F06800096EED /* None.mp3 */; };
 		7F6E65112680F06800096EED /* Typewriter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7F6E650D2680F06800096EED /* Typewriter.mp3 */; };
 		7F6E65122680F06800096EED /* Click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7F6E650E2680F06800096EED /* Click.mp3 */; };
-		7F7E275326818FCF00076D70 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F7E275226818FCB00076D70 /* SF-Pro.ttf */; };
 		7FA82AF3271D073500728A9D /* Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82AF2271D073500728A9D /* Blue.png */; };
-		7FA82AF5271D089900728A9D /* Dark Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82AF4271D089900728A9D /* Dark Blue.png */; };
 		7FA82AF7271D08DA00728A9D /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82AF6271D08DA00728A9D /* Red.png */; };
 		7FA82AF9271D090500728A9D /* Gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82AF8271D090500728A9D /* Gray.png */; };
 		7FA82AFB271D094F00728A9D /* Orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82AFA271D094F00728A9D /* Orange.png */; };
@@ -61,7 +62,6 @@
 		7FA82B05271D0B2200728A9D /* Pink (Dark bg).png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82B04271D0B2200728A9D /* Pink (Dark bg).png */; };
 		7FA82B07271D0B6400728A9D /* Red (Dark bg).png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82B06271D0B6400728A9D /* Red (Dark bg).png */; };
 		7FA82B09271D0BB100728A9D /* Yellow (Dark bg).png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82B08271D0BB100728A9D /* Yellow (Dark bg).png */; };
-		7FA82B0B271D0BC000728A9D /* Dark Blue (Dark bg).png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA82B0A271D0BC000728A9D /* Dark Blue (Dark bg).png */; };
 		7FB46AF826748318005525AF /* HistoryClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB46AF726748318005525AF /* HistoryClassController.swift */; };
 		7FB46AFA267487ED005525AF /* FontPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB46AF9267487ED005525AF /* FontPickerController.swift */; };
 		7FB46B002676E51D005525AF /* Avenir.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 7FB46AFF2676E51D005525AF /* Avenir.ttc */; };
@@ -128,6 +128,9 @@
 		7F2E799426E7CD2F00D49FB3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		7F2E799626E7FFCA00D49FB3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7F2E799826E81F6100D49FB3 /* NewYork.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NewYork.ttf; sourceTree = "<group>"; };
+		7F3765F12786BA3900A107FF /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
+		7F3765F52786BAAD00A107FF /* Dark Blue (Dark bg).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dark Blue (Dark bg).png"; sourceTree = "<group>"; };
+		7F3765F72786BAF400A107FF /* Dark Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dark Blue.png"; sourceTree = "<group>"; };
 		7F579F22271BA0C800385220 /* Pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pink.png; sourceTree = "<group>"; };
 		7F579F23271BA0C800385220 /* Yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yellow.png; sourceTree = "<group>"; };
 		7F579F24271BA0C800385220 /* Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Green.png; sourceTree = "<group>"; };
@@ -161,9 +164,7 @@
 		7F6E650C2680F06800096EED /* None.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = None.mp3; sourceTree = "<group>"; };
 		7F6E650D2680F06800096EED /* Typewriter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Typewriter.mp3; sourceTree = "<group>"; };
 		7F6E650E2680F06800096EED /* Click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Click.mp3; sourceTree = "<group>"; };
-		7F7E275226818FCB00076D70 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro.ttf"; path = "../../../../../../../Library/Fonts/SF-Pro.ttf"; sourceTree = "<group>"; };
 		7FA82AF2271D073500728A9D /* Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue.png; sourceTree = "<group>"; };
-		7FA82AF4271D089900728A9D /* Dark Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dark Blue.png"; path = "../../../../../Icons/Calculator/Light/Dark Blue.png"; sourceTree = "<group>"; };
 		7FA82AF6271D08DA00728A9D /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
 		7FA82AF8271D090500728A9D /* Gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gray.png; sourceTree = "<group>"; };
 		7FA82AFA271D094F00728A9D /* Orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orange.png; sourceTree = "<group>"; };
@@ -174,7 +175,6 @@
 		7FA82B04271D0B2200728A9D /* Pink (Dark bg).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink (Dark bg).png"; sourceTree = "<group>"; };
 		7FA82B06271D0B6400728A9D /* Red (Dark bg).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red (Dark bg).png"; sourceTree = "<group>"; };
 		7FA82B08271D0BB100728A9D /* Yellow (Dark bg).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow (Dark bg).png"; sourceTree = "<group>"; };
-		7FA82B0A271D0BC000728A9D /* Dark Blue (Dark bg).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dark Blue (Dark bg).png"; sourceTree = "<group>"; };
 		7FB46AF726748318005525AF /* HistoryClassController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryClassController.swift; sourceTree = "<group>"; };
 		7FB46AF9267487ED005525AF /* FontPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontPickerController.swift; sourceTree = "<group>"; };
 		7FB46AFF2676E51D005525AF /* Avenir.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Avenir.ttc; sourceTree = "<group>"; };
@@ -325,10 +325,10 @@
 				7F579F24271BA0C800385220 /* Green.png */,
 				7FA82AF8271D090500728A9D /* Gray.png */,
 				7FA82AFA271D094F00728A9D /* Orange.png */,
+				7F3765F72786BAF400A107FF /* Dark Blue.png */,
 				7F579F22271BA0C800385220 /* Pink.png */,
 				7F579F23271BA0C800385220 /* Yellow.png */,
 				7FA82AF6271D08DA00728A9D /* Red.png */,
-				7FA82AF4271D089900728A9D /* Dark Blue.png */,
 				7FA82AF2271D073500728A9D /* Blue.png */,
 			);
 			path = Light;
@@ -339,7 +339,7 @@
 			children = (
 				7FA82AFC271D0A0100728A9D /* Orange (Dark bg).png */,
 				7FA82AFE271D0A4000728A9D /* Blue (Dark bg).png */,
-				7FA82B0A271D0BC000728A9D /* Dark Blue (Dark bg).png */,
+				7F3765F52786BAAD00A107FF /* Dark Blue (Dark bg).png */,
 				7FA82B00271D0A7600728A9D /* Gray (Dark bg).png */,
 				7FA82B02271D0ACA00728A9D /* Green (Dark bg).png */,
 				7FA82B04271D0B2200728A9D /* Pink (Dark bg).png */,
@@ -354,7 +354,7 @@
 			children = (
 				7FB46B022676F147005525AF /* SF-Pro-Rounded-Regular.otf */,
 				7F2E799826E81F6100D49FB3 /* NewYork.ttf */,
-				7F7E275226818FCB00076D70 /* SF-Pro.ttf */,
+				7F3765F12786BA3900A107FF /* SF-Pro.ttf */,
 				7FB46AFF2676E51D005525AF /* Avenir.ttc */,
 			);
 			path = Fonts;
@@ -399,11 +399,11 @@
 		7FCBD1C527862DA900E02CCF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7FC12306267285E400D3599E /* Settings */,
 				7FCDE28626EB160A00D11BC1 /* MoreOperatorsViewController.swift */,
 				7F10E42E26EE70A2005D069C /* NewThemeController.swift */,
 				7FB46AF726748318005525AF /* HistoryClassController.swift */,
 				7F687214264701F60061A735 /* ViewController.swift */,
+				7FC12306267285E400D3599E /* Settings */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -562,20 +562,20 @@
 				7F687218264701F60061A735 /* Main.storyboard in Resources */,
 				7F6E65112680F06800096EED /* Typewriter.mp3 in Resources */,
 				7F2E799326E7C1BA00D49FB3 /* SettingsCell.xib in Resources */,
-				7FA82AF5271D089900728A9D /* Dark Blue.png in Resources */,
 				7F6E65122680F06800096EED /* Click.mp3 in Resources */,
-				7F7E275326818FCF00076D70 /* SF-Pro.ttf in Resources */,
 				7FA82AF7271D08DA00728A9D /* Red.png in Resources */,
 				7F579F3D271BAD4C00385220 /* AltIconCell.xib in Resources */,
 				7FA82B07271D0B6400728A9D /* Red (Dark bg).png in Resources */,
 				7FA82B09271D0BB100728A9D /* Yellow (Dark bg).png in Resources */,
+				7F3765F82786BAF400A107FF /* Dark Blue.png in Resources */,
 				7F579F2A271BA0C900385220 /* Yellow.png in Resources */,
 				7FA82B03271D0ACA00728A9D /* Green (Dark bg).png in Resources */,
 				7FB46B002676E51D005525AF /* Avenir.ttc in Resources */,
 				7F579F2B271BA0C900385220 /* Green.png in Resources */,
+				7F3765F22786BA3900A107FF /* SF-Pro.ttf in Resources */,
 				7FA82AFF271D0A4000728A9D /* Blue (Dark bg).png in Resources */,
 				7FA82AFD271D0A0100728A9D /* Orange (Dark bg).png in Resources */,
-				7FA82B0B271D0BC000728A9D /* Dark Blue (Dark bg).png in Resources */,
+				7F3765F62786BAAD00A107FF /* Dark Blue (Dark bg).png in Resources */,
 				7FA82AF3271D073500728A9D /* Blue.png in Resources */,
 				7F6E650F2680F06800096EED /* Coin.mp3 in Resources */,
 				7FA82AF9271D090500728A9D /* Gray.png in Resources */,
