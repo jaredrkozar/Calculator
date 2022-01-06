@@ -79,7 +79,7 @@ class NewThemeController: UIViewController {
     @objc func endEditing() {
         //dismisses the keyboard
         saveButton.isEnabled = true
-        view.resignFirstResponder()
+        view.endEditing(true)
         navigationItem.rightBarButtonItem = saveButton
     }
     
