@@ -36,7 +36,7 @@
 		7F59B38126F301B200B6F905 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59B38026F301B200B6F905 /* ExtensionDelegate.swift */; };
 		7F59B38526F301B200B6F905 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59B38426F301B200B6F905 /* ComplicationController.swift */; };
 		7F59B38726F301B300B6F905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F59B38626F301B300B6F905 /* Assets.xcassets */; };
-		7F59B38C26F301B300B6F905 /* Calculator (Watch(.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7F59B36E26F301B100B6F905 /* Calculator (Watch(.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7F59B38C26F301B300B6F905 /* Calculator.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7F59B36E26F301B100B6F905 /* Calculator.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7F687211264701F60061A735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F687210264701F60061A735 /* AppDelegate.swift */; };
 		7F687213264701F60061A735 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F687212264701F60061A735 /* SceneDelegate.swift */; };
 		7F687215264701F60061A735 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F687214264701F60061A735 /* ViewController.swift */; };
@@ -99,7 +99,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				7F59B38C26F301B300B6F905 /* Calculator (Watch(.app in Embed Watch Content */,
+				7F59B38C26F301B300B6F905 /* Calculator.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +138,7 @@
 		7F579F3B271BAD4C00385220 /* AltIconCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AltIconCell.xib; sourceTree = "<group>"; };
 		7F579F40271BADD900385220 /* AltIconPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltIconPickerController.swift; sourceTree = "<group>"; };
 		7F579F42271BE2D800385220 /* IconCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCollectionReusableView.swift; sourceTree = "<group>"; };
-		7F59B36E26F301B100B6F905 /* Calculator (Watch(.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calculator (Watch(.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F59B36E26F301B100B6F905 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F59B37126F301B100B6F905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		7F59B37326F301B200B6F905 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F59B37926F301B200B6F905 /* Calculator (Watch( Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Calculator (Watch( Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -296,7 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				7F68720D264701F60061A735 /* Calculator.app */,
-				7F59B36E26F301B100B6F905 /* Calculator (Watch(.app */,
+				7F59B36E26F301B100B6F905 /* Calculator.app */,
 				7F59B37926F301B200B6F905 /* Calculator (Watch( Extension.appex */,
 			);
 			name = Products;
@@ -447,7 +447,7 @@
 			);
 			name = "Calculator (Watch(";
 			productName = "Calculator (Watch(";
-			productReference = 7F59B36E26F301B100B6F905 /* Calculator (Watch(.app */;
+			productReference = 7F59B36E26F301B100B6F905 /* Calculator.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		7F59B37826F301B200B6F905 /* Calculator (Watch( Extension */ = {
@@ -789,12 +789,11 @@
 				DEVELOPMENT_TEAM = 7UHNX49SSD;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = Calculator__Watch__Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "Calculator (Watch(";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.jkozar.Calculator;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jkozar.Calculator.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Calculator;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -817,12 +816,11 @@
 				DEVELOPMENT_TEAM = 7UHNX49SSD;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = Calculator__Watch__Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "Calculator (Watch(";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.jkozar.Calculator;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jkozar.Calculator.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Calculator;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -843,10 +841,10 @@
 				DEVELOPMENT_TEAM = 7UHNX49SSD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Calculator (Watch( Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Calculator (Watch( Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CFBundleDisplayName = Calculator;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = Calculator__Watch__Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = Calculator__Watch__Extension.ExtensionDelegate;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -875,10 +873,10 @@
 				DEVELOPMENT_TEAM = 7UHNX49SSD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Calculator (Watch( Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Calculator (Watch( Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CFBundleDisplayName = Calculator;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = Calculator__Watch__Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = Calculator__Watch__Extension.ExtensionDelegate;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1023,7 +1021,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7UHNX49SSD;
 				INFOPLIST_FILE = Calculator/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1044,7 +1042,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7UHNX49SSD;
 				INFOPLIST_FILE = Calculator/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

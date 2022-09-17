@@ -16,6 +16,8 @@ class TintPickerController: UITableViewController, UIColorPickerViewControllerDe
 
         NotificationCenter.default.addObserver(self, selector: #selector(newThemeAdded(_:)), name: NSNotification.Name( "newThemeAdded"), object: nil)
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .done, target: self, action: #selector(addNewTheme))
+        
     }
 
     @objc func newThemeAdded(_ notification: Notification) {
@@ -36,14 +38,6 @@ class TintPickerController: UITableViewController, UIColorPickerViewControllerDe
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "tintColorCell", for: indexPath)
         cell.textLabel?.text = listofthemes[indexPath.row].name
- 
-        let tintIndex = listofthemes.firstIndex(of: currenttheme)
-
-        if indexPath.row == tintIndex {
-          cell.accessoryType = .checkmark
-        } else {
-          cell.accessoryType = .none
-        }
         
         return cell
     }
@@ -87,12 +81,8 @@ class TintPickerController: UITableViewController, UIColorPickerViewControllerDe
             let  editThemeAction = UIAction(title: "Edit Theme", image: UIImage(systemName: "pencil")) { [self] _ in
                 UserDefaults.standard.set(indexPath.row, forKey: "row")
                 isCurrentlyEditingTheme = true
-                let newtheme = storyboard!.instantiateViewController(withIdentifier: "newThemeView") as! NewThemeController
-                
-                newtheme.newthemeName = selectedtheme.name
-                NewThemeController.themeRegularColor = selectedtheme.regularcolor
-                NewThemeController.themeOperatorColor = selectedtheme.operatorcolor
-                self.show(newtheme, sender: true)
+
+                showNewThemeScreen(index: indexPath.row)
             }
             
             let deleteThemeAction = UIAction(
@@ -111,10 +101,22 @@ class TintPickerController: UITableViewController, UIColorPickerViewControllerDe
         }
     }
     
-    @IBAction func newThemeButton(_ sender: Any) {
-        isCurrentlyEditingTheme = false
-        let VC1 = storyboard!.instantiateViewController(withIdentifier: "newThemeView") as! NewThemeController
-        self.show(VC1, sender: true)
+    @objc func addNewTheme() {
+        showNewThemeScreen(index: nil)
+    }
+    
+    func showNewThemeScreen(index: Int?) {
+        let vc = NewThemeController()
+        let navigationController = UINavigationController(rootViewController: vc)
+
+        vc.index = index
+        if let picker = navigationController.presentationController as? UISheetPresentationController {
+            picker.detents = [.medium()]
+            picker.prefersGrabberVisible = true
+            picker.preferredCornerRadius = 5.0
+        }
+        
+        self.present(navigationController, animated: true)
     }
 }
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ggo-8I-FVA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ggo-8I-FVA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -408,7 +408,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="settingsScreen" id="1al-CD-ohd" customClass="SettingsViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="klL-6Y-jW6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="separatorColor" systemColor="quaternaryLabelColor"/>
                         <color key="sectionIndexBackgroundColor" systemColor="systemGray3Color"/>
@@ -470,63 +470,6 @@
             </objects>
             <point key="canvasLocation" x="3615.9420289855075" y="95.758928571428569"/>
         </scene>
-        <!--New Theme Controller-->
-        <scene sceneID="gHk-Nv-JhY">
-            <objects>
-                <viewController storyboardIdentifier="newThemeView" id="sgz-x2-Tun" customClass="NewThemeController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TbW-0h-pWt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Theme Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCa-bn-BoA">
-                                <rect key="frame" x="20" y="150" width="189" height="68"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Numbers Color" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiZ-K3-Hoq">
-                                <rect key="frame" x="20" y="254" width="115" height="90"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Operators Color" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWV-Hi-SqB">
-                                <rect key="frame" x="20" y="368" width="250" height="70"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Custom Theme Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dHu-iq-Ygd">
-                                <rect key="frame" x="226" y="167" width="168" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="beganEditing:" destination="sgz-x2-Tun" eventType="editingDidBegin" id="q2y-ey-jpe"/>
-                                </connections>
-                            </textField>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="vkc-Ds-4qP"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="dHu-iq-Ygd" firstAttribute="top" secondItem="vkc-Ds-4qP" secondAttribute="top" constant="123" id="1hK-ad-c9N"/>
-                            <constraint firstItem="OCa-bn-BoA" firstAttribute="top" secondItem="vkc-Ds-4qP" secondAttribute="top" constant="106" id="2Oj-Aq-uDI"/>
-                            <constraint firstItem="JWV-Hi-SqB" firstAttribute="top" secondItem="vkc-Ds-4qP" secondAttribute="top" constant="324" id="5XD-n7-Tde"/>
-                            <constraint firstItem="OCa-bn-BoA" firstAttribute="leading" secondItem="vkc-Ds-4qP" secondAttribute="leading" constant="20" id="KJw-8D-5pE"/>
-                            <constraint firstItem="hiZ-K3-Hoq" firstAttribute="top" secondItem="vkc-Ds-4qP" secondAttribute="top" constant="210" id="PRp-QE-fyG"/>
-                            <constraint firstItem="hiZ-K3-Hoq" firstAttribute="leading" secondItem="vkc-Ds-4qP" secondAttribute="leading" constant="20" id="U5h-z5-5vq"/>
-                            <constraint firstItem="JWV-Hi-SqB" firstAttribute="leading" secondItem="vkc-Ds-4qP" secondAttribute="leading" constant="20" id="iV2-gD-7df"/>
-                            <constraint firstItem="vkc-Ds-4qP" firstAttribute="trailing" secondItem="dHu-iq-Ygd" secondAttribute="trailing" constant="20" id="lBY-pK-Iad"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="SdA-Np-V53"/>
-                    <connections>
-                        <outlet property="nameTextField" destination="dHu-iq-Ygd" id="K1P-tj-HZN"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EUC-FQ-Y91" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6115.9420289855079" y="117.85714285714285"/>
-        </scene>
         <!--Key Click Sounds-->
         <scene sceneID="cAR-2i-fLl">
             <objects>
@@ -563,10 +506,10 @@
             <objects>
                 <tableViewController storyboardIdentifier="historyScreen" id="ev5-zN-jdk" customClass="HistoryClassController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ScN-h6-yvb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" id="D3u-7D-RdH">
-                            <rect key="frame" x="0.0" y="117.5" width="414" height="391"/>
+                            <rect key="frame" x="0.0" y="505" width="414" height="391"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -898,7 +841,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ggo-8I-FVA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Iv5-jp-Dio">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -916,7 +858,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JEd-7k-ck8" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="S1r-b3-UFR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -934,7 +875,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3JO-ot-4fl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kf5-iZ-r3l">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -952,7 +892,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9vh-4z-ONN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DeB-Hk-6oV">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -970,7 +909,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6NO-W8-1EH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Ch-hW-p0n">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -985,11 +923,11 @@
     </scenes>
     <color key="tintColor" name="tintColor"/>
     <resources>
-        <image name="clock" catalog="system" width="128" height="121"/>
-        <image name="delete.left" catalog="system" width="128" height="104"/>
-        <image name="ellipsis.circle" catalog="system" width="128" height="121"/>
-        <image name="gearshape" catalog="system" width="128" height="121"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="clock" catalog="system" width="32" height="32"/>
+        <image name="delete.left" catalog="system" width="32" height="32"/>
+        <image name="ellipsis.circle" catalog="system" width="32" height="32"/>
+        <image name="gearshape" catalog="system" width="32" height="32"/>
+        <image name="plus" catalog="system" width="32" height="32"/>
         <namedColor name="Blue">
             <color red="0.078000001609325409" green="0.36899998784065247" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
